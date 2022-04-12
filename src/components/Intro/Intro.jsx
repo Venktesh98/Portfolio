@@ -32,7 +32,7 @@ function Intro() {
 
             <span className={styles.TagLine}>
               Enthusiast, for building applications with Frontend and Backend
-              operations.
+              operations 🚀
             </span>
 
             <div className={styles.HireDetails}>
