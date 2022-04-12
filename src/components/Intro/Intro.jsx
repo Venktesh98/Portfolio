@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Intro.module.css";
 import Typed from "react-typed";
-import cx from "classnames";
 
 function Intro() {
   return (

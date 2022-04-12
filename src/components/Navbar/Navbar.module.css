@@ -1,34 +1,57 @@
-.navbarContainer {
+.NavbarContainer {
   /* border: 1px solid wheat; */
   height: 50px;
+  position: relative;
   /* margin-top: 0.4; */
   /* margin-top: -2%; */
 }
-.navbarContents {
+.NavbarContents {
   display: flex;
   /* border: 1px solid greenyellow; */
   width: 95%;
   justify-content: space-between;
   align-items: center;
-  margin-top: 4%;
+  margin-top: 3.5%;
   /* color: white; */
 }
-.navbarLinks {
+.LogoName {
+  color: white;
+  list-style: none;
+  font-size: 30px;
+  margin-left: 20%;
+  font-weight: 500;
+  /* border: 1px solid pink; */
+  width: 100%;
+}
+.FirstLetter {
+  color: #14202e;
+  font-size: 35px;
+  font-weight: 800;
+}
+.LogoName::after {
+  position: absolute;
+  left: 2.5%;
+  top: -13%;
+  background-color: rgb(248, 99, 149);
+  content: "";
+  height: 60px;
+  width: 60px;
+  z-index: -1;
+  border-radius: 50%;
+}
+.NavbarLinks {
   display: flex;
   justify-content: space-between;
   width: 37%;
   /* border: 2px solid rgb(226, 223, 15); */
 }
-.logoName {
-  color: white;
+.NavbarLinks li {
+  color: rgb(172, 170, 170);
   list-style: none;
-  font-size: 25px;
-  margin-left: 20%;
-  /* border: 1px solid pink; */
-  width: 100%;
+  cursor: pointer;
+  font-weight: 600;
 }
-.navbarLinks li {
-  color: white;
-  list-style: none;
+.NavbarLinks li:hover {
+  color: rgb(255, 255, 255);
   cursor: pointer;
 }

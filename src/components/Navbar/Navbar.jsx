@@ -5,13 +5,16 @@ import styles from "./Navbar.module.css";
 const Navbar = () => {
   return (
     <>
-      <ul className={styles.navbarContainer}>
-        <div className={styles.navbarContents}>
+      <ul className={styles.NavbarContainer}>
+        <div className={styles.NavbarContents}>
           <div>
-            <li className={styles.logoName}>Venktesh Soma</li>
+            <li className={styles.LogoName}>
+              <span className={styles.FirstLetter}>V</span>
+              gs
+            </li>
           </div>
 
-          <div className={styles.navbarLinks}>
+          <div className={styles.NavbarLinks}>
             <div>
               <li>Home</li>
             </div>
