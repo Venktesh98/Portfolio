@@ -1,0 +1,157 @@
+.IntroContainer {
+  height: 50vh;
+  /* position: relative; */
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-content: space-between;
+  /* width: 100%; */
+  height: 27rem;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin-top: 6%;
+
+  /* text-align: center; */
+}
+.DetailsContainer {
+  width: 50%;
+  /* border: 2px solid brown; */
+}
+.Details {
+  position: fixed;
+  left: 5%;
+  top: 35%;
+  line-height: 20px;
+  /* text-align: center;
+    margin-top: auto;
+    margin-bottom: auto; */
+}
+.FullDetails {
+  margin-top: 7%;
+  /* border: 1px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.IntroLine {
+  font-size: 23px;
+  color: white;
+  width: 24rem;
+  /* border: 1px solid yellow; */
+  text-align: center;
+}
+
+.fullName {
+  color: rgb(243, 149, 180);
+  font-size: 3rem;
+  width: 32rem;
+  /* border: 2px solid gray; */
+  text-align: center;
+}
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, -10px, 0);
+  }
+}
+
+/* .Resume {
+  border-radius: 5px;
+  text-align: center;
+  height: 20px;
+  width: 100px;
+  padding: 10px;
+  background-color: white;
+} */
+.bounce {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 1%;
+  border-radius: 50%;
+  background-color: white;
+  animation: bounce 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-iteration-count: infinite;
+}
+
+.TagLine {
+  font-size: 19.5px;
+  color: white;
+  line-height: 35px;
+}
+.HireDetails {
+  display: flex;
+  width: 310px;
+  margin-top: 5%;
+  /* border: 1px solid white; */
+  justify-content: space-between;
+}
+.HireMe,
+.Resume {
+  border-radius: 20px;
+  text-align: center;
+  height: 20px;
+  width: 120px;
+  padding: 10px;
+  color: white;
+  font-weight: 700;
+}
+.HireMe {
+  border: 2px solid white;
+  background-color: rgb(20, 32, 46);
+}
+.HireMe:hover {
+  border: 2px solid rgb(243, 149, 180);
+  cursor: pointer;
+}
+.Resume {
+  border: 2px solid rgb(248, 99, 149);
+  background-color: rgb(248, 99, 149);
+}
+.Resume:hover {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 252, 253);
+  color: rgba(90, 90, 90, 0.938);
+  cursor: pointer;
+}
+.Technologies {
+  /* border: 2px solid white; */
+  width: 88%;
+  text-align: center;
+  margin-top: 0.5%;
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+}
+.IntroImageContainer {
+  width: 50%;
+  text-align: center;
+  /* border-radius: 50%;
+  height: 100%;
+  width: 36%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; */
+  /* border: 2px solid pink; */
+  /* margin-right: -8%; */
+}
+.IntroImage {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 63%;
+  height: 100%;
+  margin-right: -2%;
+  box-shadow: rgba(238, 236, 236, 0.685) 0px 7px 29px 0px;
+  /* box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px; */
+
+  /* margin-left: 12.5%; */
+
+  /* height: 100%;
+    width: 100%;
+    border-radius: 60%; */
+  /* border: 2px solid rgb(9, 192, 224); */
+}
