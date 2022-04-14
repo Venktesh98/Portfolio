@@ -1,5 +1,6 @@
 import { makeStyles } from "@material-ui/core";
 
+export const drawerWidth = 250;
 export const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -13,14 +14,15 @@ export const useStyles = makeStyles((theme) => ({
     marginTop: "2%",
   },
   menuButton: {
-    marginRight: theme.spacing(2),
+    marginLeft: theme.spacing(2),
   },
   title: {
     flexGrow: 1,
+    marginLeft: "3%",
 
-    [theme.breakpoints.up("lg")]: {
+    [theme.breakpoints.up("md")]: {
       //   border: "1px solid red",
-      marginLeft: "3%",
+      // marginLeft: "3%",
     },
   },
   LogoName: {
@@ -62,7 +64,8 @@ export const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "space-between",
     width: "37%",
-    // border: "2px solid rgb(226, 223, 15)"
+    // border: "2px solid rgb(226, 223, 15)",
+    marginRight: "2%",
 
     "& li": {
       color: "rgb(172, 170, 170)",
@@ -74,6 +77,40 @@ export const useStyles = makeStyles((theme) => ({
     "& li:hover": {
       color: "rgb(255, 255, 255)",
       cursor: "pointer",
+    },
+
+    [theme.breakpoints.down("md")]: {
+      // width: "50%",
+      display: "none",
+    },
+  },
+
+  drawerPaper: {
+    width: drawerWidth,
+    backgroundColor: "rgb(0,0,0,0.7)",
+    // backgroundColor: "rgb(0,46,99)",
+  },
+  closeMenuButton: {
+    margin: "3% auto 0 3%",
+    color: "white",
+  },
+
+  drawerLinks: {
+    color: "white",
+    fontSize: "18px",
+    listStyle: "none",
+    textAlign: "center",
+    marginTop: "10%",
+
+    "& li": {
+      padding: "15%",
+    },
+
+    "& li:hover": {
+      color: "rgb(243, 149, 180)",
+      cursor: "pointer",
+      // backgroundColor: "rgb(0,0,0,0.7)",
+      // borderRadius: "22px",
     },
   },
 }));
