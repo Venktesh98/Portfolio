@@ -5,7 +5,7 @@ export const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     // border: "1px solid yellow",
-    // position:"relative"
+    position: "relative",
   },
   navbar: {
     backgroundColor: "#14202e",
@@ -26,11 +26,12 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   LogoName: {
-    position: "relative",
+    position: "absolute",
     color: "white",
     listStyle: "none",
     fontSize: "30px",
     fontWeight: "500",
+    zIndex: 100,
     // border: "1px solid pink",
     // marginTop:"-5%"
 
@@ -47,11 +48,13 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   FirstLetter: {
-    position: "absolute",
+    // position: "absolute",
+    position: "relative",
     zIndex: "1",
     color: "#14202e",
     fontSize: "35px",
     fontWeight: "800",
+    left: "30%",
 
     "&::after": {
       content: '"gs"',
