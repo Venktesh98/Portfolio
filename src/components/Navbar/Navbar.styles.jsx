@@ -33,7 +33,7 @@ export const useStyles = makeStyles((theme) => ({
     fontWeight: "500",
     zIndex: 100,
     // border: "1px solid pink",
-    // marginTop:"-5%"
+    marginTop: "-1.5%",
 
     "&::after": {
       border: "1px solid pink",
@@ -90,8 +90,8 @@ export const useStyles = makeStyles((theme) => ({
 
   drawerPaper: {
     width: drawerWidth,
-    backgroundColor: "rgb(0,0,0,0.7)",
-    // backgroundColor: "rgb(0,46,99)",
+    // backgroundColor: "rgb(0,0,0,0.7)",
+    backgroundColor: "rgb(20,32,46,0.9)",
   },
   closeMenuButton: {
     margin: "3% auto 0 3%",
