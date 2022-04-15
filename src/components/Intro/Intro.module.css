@@ -158,3 +158,26 @@
     border-radius: 60%; */
   /* border: 2px solid rgb(9, 192, 224); */
 }
+
+/* .............. Media Queries.................. */
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .Details {
+    /* border: 1px solid yellow; */
+    position: absolute;
+    margin-left: -10.3%;
+    margin-top: -2%;
+  }
+  .TagLine {
+    width: 85%;
+    text-align: center;
+  }
+  .IntroImage {
+    margin-right: -23%;
+    position: relative;
+    top: 60%;
+    transform: translateY(-50%);
+    /* margin-bottom: auto; */
+    width: 73%;
+    height: 85%;
+  }
+}

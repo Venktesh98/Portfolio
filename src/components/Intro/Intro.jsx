@@ -8,7 +8,7 @@ function Intro() {
       <div className={styles.DetailsContainer}>
         <div className={styles.Details}>
           <div className={styles.FullDetails}>
-            <div className={styles.IntroLine}>Hii, Geeks I'm </div>
+            <div className={styles.IntroLine}>Hii🙋🏻‍♂️, Geeks I'm </div>
             <h1 className={styles.fullName}>
               Venktesh Soma
               <span className={styles.bounce}></span>
