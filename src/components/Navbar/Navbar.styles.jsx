@@ -15,6 +15,10 @@ export const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     marginLeft: theme.spacing(2),
+    display: "none",
+    [theme.breakpoints.down("sm")]: {
+      display: "block",
+    },
   },
   title: {
     flexGrow: 1,
@@ -66,7 +70,7 @@ export const useStyles = makeStyles((theme) => ({
   navbarLinks: {
     display: "flex",
     justifyContent: "space-between",
-    width: "37%",
+    width: "40%",
     // border: "2px solid rgb(226, 223, 15)",
     marginRight: "2%",
 
@@ -83,6 +87,10 @@ export const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.down("md")]: {
+      width: "45%",
+    },
+
+    [theme.breakpoints.down("sm")]: {
       // width: "50%",
       display: "none",
     },

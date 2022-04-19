@@ -36,7 +36,7 @@ const Navbar = () => {
             </div>
             {/* </Hidden> */}
 
-            <Hidden lgUp>
+            {/* <Hidden lgUp> */}
               <IconButton
                 edge="start"
                 className={classes.menuButton}
@@ -46,12 +46,12 @@ const Navbar = () => {
               >
                 <MenuIcon />
               </IconButton>
-            </Hidden>
+            {/* </Hidden> */}
           </Toolbar>
         </AppBar>
 
         {/* ............... Navigation Drawer .................. */}
-        <Hidden lgUp>
+        {/* <Hidden lgUp> */}
           <Drawer
             variant="temporary"
             anchor={"right"}
@@ -76,7 +76,7 @@ const Navbar = () => {
               </div>
             </Box>
           </Drawer>
-        </Hidden>
+        {/* </Hidden> */}
       </div>
     </>
   );

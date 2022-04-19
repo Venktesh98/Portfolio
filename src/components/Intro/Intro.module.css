@@ -149,20 +149,12 @@
   height: 100%;
   margin-right: -2%;
   box-shadow: rgba(238, 236, 236, 0.685) 0px 7px 29px 0px;
-  /* box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px; */
-
-  /* margin-left: 12.5%; */
-
-  /* height: 100%;
-    width: 100%;
-    border-radius: 60%; */
-  /* border: 2px solid rgb(9, 192, 224); */
 }
 
 /* .............. Media Queries.................. */
 @media only screen and (min-width: 769px) and (max-width: 991px) {
   .Details {
-    /* border: 1px solid yellow; */
+    border: 1px solid rgb(255, 72, 0);
     position: absolute;
     margin-left: -10.3%;
     margin-top: -2%;
@@ -174,10 +166,90 @@
   .IntroImage {
     margin-right: -23%;
     position: relative;
-    top: 60%;
+    top: 55%;
     transform: translateY(-50%);
     /* margin-bottom: auto; */
-    width: 73%;
-    height: 85%;
+    width: 75%;
+    height: 96%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1094px) {
+  .Details {
+    border: 1px solid yellow;
+    position: absolute;
+    margin-left: -10.3%;
+    margin-top: -2%;
+  }
+  .TagLine {
+    width: 85%;
+    text-align: center;
+  }
+  .IntroImage {
+    margin-right: -20%;
+    position: relative;
+    top: 55%;
+    transform: translateY(-50%);
+    /* margin-bottom: auto; */
+    width: 75%;
+    height: 96%;
+  }
+}
+
+@media only screen and (min-width: 1095px) and (max-width: 1111px) {
+  .Details {
+    border: 1px solid rgb(255, 0, 140);
+    position: absolute;
+    margin-left: -10.3%;
+    margin-top: -2%;
+  }
+  .TagLine {
+    width: 85%;
+    text-align: center;
+  }
+  .IntroImage {
+    margin-right: -20%;
+    position: relative;
+    top: 55%;
+    transform: translateY(-50%);
+    /* margin-bottom: auto; */
+    width: 75%;
+    height: 96%;
+  }
+}
+
+@media only screen and (min-width: 1112px) and (max-width: 1250px) {
+  .IntroImageContainer {
+    width: 60%;
+    text-align: center;
+    border: 2px solid yellow;
+  }
+  .IntroImage {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 63%;
+    height: 100%;
+    margin-right: -18%;
+    margin-top: -1%;
+    box-shadow: rgba(238, 236, 236, 0.685) 0px 7px 29px 0px;
+    /* box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px; */
+  }
+}
+
+@media only screen and (min-width: 1251px) {
+  .IntroImageContainer {
+    width: 50%;
+    text-align: center;
+    /* border: 2px solid rgb(202, 20, 20); */
+  }
+  .IntroImage {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 63%;
+    height: 100%;
+    margin-right: -15%;
+    margin-top: -1%;
+    box-shadow: rgba(238, 236, 236, 0.685) 0px 7px 29px 0px;
+    /* box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px; */
   }
 }
