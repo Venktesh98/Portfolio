@@ -14,10 +14,12 @@ export const useStyles = makeStyles((theme) => ({
     marginTop: "2%",
   },
   menuButton: {
-    marginLeft: theme.spacing(2),
+    // marginLeft: theme.spacing(2),
     display: "none",
     [theme.breakpoints.down("sm")]: {
       display: "block",
+      right: "3%",
+      position: "absolute",
     },
   },
   title: {
@@ -37,7 +39,13 @@ export const useStyles = makeStyles((theme) => ({
     fontWeight: "500",
     zIndex: 100,
     // border: "1px solid pink",
-    marginTop: "-1.5%",
+    marginTop: "-1.8%",
+
+    [theme.breakpoints.down("md")]: {
+      marginTop: "-1.8%",
+      //   border: "1px solid red",
+      // marginLeft: "3%",
+    },
 
     "&::after": {
       border: "1px solid pink",

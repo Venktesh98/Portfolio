@@ -1,11 +1,11 @@
 .IntroContainer {
-  height: 50vh;
+  /* height: 50vh; */
   /* position: relative; */
   /* border: 1px solid yellow; */
   display: flex;
   justify-content: space-between;
   /* width: 100%; */
-  height: 27rem;
+  /* height: 27rem; */
   /* margin-left: auto;
   margin-right: auto; */
   margin-top: 6%;
@@ -15,9 +15,10 @@
 .DetailsContainer {
   width: 50%;
   /* border: 2px solid brown; */
+  /* margin-left: 2%; */
 }
 .Details {
-  position: fixed;
+  /* position: fixed; */
   left: 5%;
   top: 35%;
   line-height: 20px;
@@ -26,8 +27,10 @@
     margin-bottom: auto; */
 }
 .FullDetails {
-  margin-top: 7%;
+  margin-top: 12%;
   /* border: 1px solid yellow; */
+  width: 100%;
+  margin-left: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -152,7 +155,89 @@
 }
 
 /* .............. Media Queries.................. */
-@media only screen and (min-width: 769px) and (max-width: 991px) {
+/* @media only screen and (max-width: 938px) { */
+  /* .IntroContainer{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between; */
+    /* width: 100%; */
+    /* height: 27rem; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* margin-top: 6%; */
+  /* } */
+/* } */
+
+@media only screen and (max-width: 938px) {
+  .IntroContainer {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .DetailsContainer {
+    /* text-align: center; */
+    /* position: relative; */
+    /* border: 1px solid rgb(30, 255, 0); */
+    /* height: 50vh; */
+    width: 100%;
+  }
+  .FullDetails {
+    margin-top: 12%;
+    margin-left: 0;
+    border: 1px solid yellow;
+    /* width: 100%; */
+    /* margin-left: 5%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fullName {
+    width: 100%;
+    font-size: 2.6rem;
+    line-height: 40px;
+  }
+  .TagLine {
+    width: 100%;
+    text-align: center;
+  }
+  .IntroImageContainer {
+    margin-top: 10%;
+    width: 100%;
+    text-align: center;
+    /* position: relative; */
+    /* width: 50vw;
+    height: 50vw; */
+    /* overflow: hidden; */
+    /* border-radius: 50%;
+    box-shadow: rgba(238, 236, 236, 0.685) 0px 7px 29px 0px; */
+  }
+  .IntroLine{
+    width: auto;
+  }
+  .IntroImage {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 73%;
+    height: 100%;
+    /* margin-right: -2%; */
+    box-shadow: rgba(238, 236, 236, 0.685) 0px 7px 29px 0px;
+
+    /* margin-right: -23%;
+    position: relative;
+    top: 55%;
+    transform: translateY(-50%); */
+    /* margin-bottom: auto; */
+    /* width: 60%;
+    height: 100%; */
+    /* width: 100%;
+    height: 100%;
+    object-fit: cover; */
+  }
+}
+
+@media only all and (min-width: 939px) and (max-width: 991px) {
   .Details {
     border: 1px solid rgb(255, 72, 0);
     position: absolute;
@@ -223,6 +308,16 @@
     width: 60%;
     text-align: center;
     border: 2px solid yellow;
+  }
+  .Details {
+    border: 1px solid yellow;
+    position: absolute;
+    margin-left: -10.3%;
+    margin-top: -2%;
+  }
+  .TagLine {
+    width: 85%;
+    text-align: center;
   }
   .IntroImage {
     object-fit: cover;
