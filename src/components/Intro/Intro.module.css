@@ -1,34 +1,19 @@
 .IntroContainer {
-  /* height: 50vh; */
-  /* position: relative; */
-  /* border: 1px solid yellow; */
   display: flex;
   justify-content: space-between;
-  /* width: 100%; */
-  /* height: 27rem; */
-  /* margin-left: auto;
-  margin-right: auto; */
+  width: 100%;
   margin-top: 6%;
-
-  /* text-align: center; */
 }
 .DetailsContainer {
   width: 50%;
-  /* border: 2px solid brown; */
-  /* margin-left: 2%; */
 }
 .Details {
-  /* position: fixed; */
   left: 5%;
   top: 35%;
   line-height: 20px;
-  /* text-align: center;
-    margin-top: auto;
-    margin-bottom: auto; */
 }
 .FullDetails {
   margin-top: 12%;
-  /* border: 1px solid yellow; */
   width: 100%;
   margin-left: 5%;
   display: flex;
@@ -39,15 +24,12 @@
   font-size: 23px;
   color: white;
   width: 24rem;
-  /* border: 1px solid yellow; */
   text-align: center;
 }
-
 .fullName {
   color: rgb(243, 149, 180);
   font-size: 3rem;
   width: 32rem;
-  /* border: 2px solid gray; */
   text-align: center;
 }
 @keyframes bounce {
@@ -59,15 +41,6 @@
     transform: translate3d(0, -10px, 0);
   }
 }
-
-/* .Resume {
-  border-radius: 5px;
-  text-align: center;
-  height: 20px;
-  width: 100px;
-  padding: 10px;
-  background-color: white;
-} */
 .bounce {
   display: inline-block;
   width: 10px;
@@ -80,17 +53,17 @@
   animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
   animation-iteration-count: infinite;
 }
-
 .TagLine {
   font-size: 19.5px;
   color: white;
   line-height: 35px;
+  text-align: center;
+  width: 110%;
 }
 .HireDetails {
   display: flex;
   width: 310px;
   margin-top: 5%;
-  /* border: 1px solid white; */
   justify-content: space-between;
 }
 .HireMe,
@@ -110,22 +83,18 @@
 .HireMe:hover {
   border: 2px solid rgb(243, 149, 180);
   cursor: pointer;
-  /* color: rgb(248, 99, 149); */
 }
 .Resume {
-  /* border: 2px solid rgba(250, 45, 113, 0.938); */
   border: 2px solid rgb(248, 99, 149);
   background-color: rgb(248, 99, 149);
 }
 .Resume:hover {
   background-color: rgb(255, 255, 255);
   border: 2px solid rgb(255, 252, 253);
-  /* color: rgba(90, 90, 90, 0.938); */
   color: #14202e;
   cursor: pointer;
 }
 .Technologies {
-  /* border: 2px solid white; */
   width: 88%;
   text-align: center;
   margin-top: 0.5%;
@@ -136,59 +105,33 @@
 .IntroImageContainer {
   width: 50%;
   text-align: center;
-  /* border-radius: 50%;
-  height: 100%;
-  width: 36%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center; */
-  /* border: 2px solid pink; */
-  /* margin-right: -8%; */
+  margin-right: 0;
 }
 .IntroImage {
   object-fit: cover;
   border-radius: 50%;
   width: 63%;
   height: 100%;
-  margin-right: -2%;
+  margin-right: -15%;
+  margin-top: -1%;
   box-shadow: rgba(238, 236, 236, 0.685) 0px 7px 29px 0px;
 }
 
 /* .............. Media Queries.................. */
-/* @media only screen and (max-width: 938px) { */
-  /* .IntroContainer{
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between; */
-    /* width: 100%; */
-    /* height: 27rem; */
-    /* margin-left: auto;
-    margin-right: auto; */
-    /* margin-top: 6%; */
-  /* } */
-/* } */
 
 @media only screen and (max-width: 938px) {
   .IntroContainer {
-    /* border: 1px solid green; */
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;
   }
   .DetailsContainer {
-    /* text-align: center; */
-    /* position: relative; */
-    /* border: 1px solid rgb(30, 255, 0); */
-    /* height: 50vh; */
     width: 100%;
   }
   .FullDetails {
     margin-top: 12%;
     margin-left: 0;
-    border: 1px solid yellow;
-    /* width: 100%; */
-    /* margin-left: 5%; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -206,14 +149,8 @@
     margin-top: 10%;
     width: 100%;
     text-align: center;
-    /* position: relative; */
-    /* width: 50vw;
-    height: 50vw; */
-    /* overflow: hidden; */
-    /* border-radius: 50%;
-    box-shadow: rgba(238, 236, 236, 0.685) 0px 7px 29px 0px; */
   }
-  .IntroLine{
+  .IntroLine {
     width: auto;
   }
   .IntroImage {
@@ -221,97 +158,93 @@
     border-radius: 50%;
     width: 73%;
     height: 100%;
-    /* margin-right: -2%; */
     box-shadow: rgba(238, 236, 236, 0.685) 0px 7px 29px 0px;
-
-    /* margin-right: -23%;
-    position: relative;
-    top: 55%;
-    transform: translateY(-50%); */
-    /* margin-bottom: auto; */
-    /* width: 60%;
-    height: 100%; */
-    /* width: 100%;
-    height: 100%;
-    object-fit: cover; */
   }
 }
 
 @media only all and (min-width: 939px) and (max-width: 991px) {
+  .IntroContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: 80vh;
+    margin-top: 6%;
+  }
+  .DetailsContainer {
+    width: 60%;
+    margin-left: -1.8%;
+  }
   .Details {
-    border: 1px solid rgb(255, 72, 0);
-    position: absolute;
     margin-left: -10.3%;
-    margin-top: -2%;
+    margin-top: -2.5%;
   }
   .TagLine {
-    width: 85%;
+    width: 87%;
     text-align: center;
   }
+  .IntroImageContainer {
+    margin: auto;
+    width: 40%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+  }
   .IntroImage {
-    margin-right: -23%;
-    position: relative;
-    top: 55%;
-    transform: translateY(-50%);
-    /* margin-bottom: auto; */
-    width: 75%;
-    height: 96%;
+    width: 100%;
+    height: 100%;
+    margin-right: 0;
+    box-shadow: rgba(238, 236, 236, 0.685) 0px 7px 29px 0px;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1094px) {
-  .Details {
-    border: 1px solid yellow;
-    position: absolute;
-    margin-left: -10.3%;
-    margin-top: -2%;
+  .IntroContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: 80vh;
+    margin-top: 6%;
   }
-  .TagLine {
-    width: 85%;
-    text-align: center;
-  }
-  .IntroImage {
-    margin-right: -20%;
-    position: relative;
-    top: 55%;
-    transform: translateY(-50%);
-    /* margin-bottom: auto; */
-    width: 75%;
-    height: 96%;
-  }
-}
-
-@media only screen and (min-width: 1095px) and (max-width: 1111px) {
-  .Details {
-    border: 1px solid rgb(255, 0, 140);
-    position: absolute;
-    margin-left: -10.3%;
-    margin-top: -2%;
-  }
-  .TagLine {
-    width: 85%;
-    text-align: center;
-  }
-  .IntroImage {
-    margin-right: -20%;
-    position: relative;
-    top: 55%;
-    transform: translateY(-50%);
-    /* margin-bottom: auto; */
-    width: 75%;
-    height: 96%;
-  }
-}
-
-@media only screen and (min-width: 1112px) and (max-width: 1250px) {
-  .IntroImageContainer {
+  .DetailsContainer {
     width: 60%;
-    text-align: center;
-    border: 2px solid yellow;
+    margin-left: -2.5%;
   }
   .Details {
-    border: 1px solid yellow;
-    position: absolute;
+    margin-left: -10.3%;
+    height: 420px;
+  }
+  .TagLine {
+    width: 88%;
+    text-align: center;
+  }
+  .IntroImageContainer {
+    margin: auto;
+    width: 40%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+  }
+  .IntroImage {
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(238, 236, 236, 0.685) 0px 7px 29px 0px;
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width: 1095px) and (max-width: 1250px) {
+  .IntroContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: 80vh;
+    margin-top: 6%;
+  }
+  .DetailsContainer {
+    width: 60%;
+    margin-left: -2.5%;
+  }
+  .Details {
     margin-left: -10.3%;
     margin-top: -2%;
   }
@@ -319,32 +252,16 @@
     width: 85%;
     text-align: center;
   }
-  .IntroImage {
-    object-fit: cover;
-    border-radius: 50%;
-    width: 63%;
-    height: 100%;
-    margin-right: -18%;
-    margin-top: -1%;
-    box-shadow: rgba(238, 236, 236, 0.685) 0px 7px 29px 0px;
-    /* box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px; */
-  }
-}
-
-@media only screen and (min-width: 1251px) {
   .IntroImageContainer {
-    width: 50%;
-    text-align: center;
-    /* border: 2px solid rgb(202, 20, 20); */
+    margin: auto;
+    width: 40%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
   }
   .IntroImage {
-    object-fit: cover;
-    border-radius: 50%;
-    width: 63%;
+    width: 100%;
     height: 100%;
-    margin-right: -15%;
-    margin-top: -1%;
     box-shadow: rgba(238, 236, 236, 0.685) 0px 7px 29px 0px;
-    /* box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px; */
+    margin-right: 0;
   }
 }

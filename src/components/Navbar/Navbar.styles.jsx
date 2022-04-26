@@ -58,6 +58,9 @@ export const useStyles = makeStyles((theme) => ({
       width: "60px",
       borderRadius: "50%",
     },
+    "&:hover": {
+      cursor: "pointer",
+    },
   },
   FirstLetter: {
     // position: "absolute",
