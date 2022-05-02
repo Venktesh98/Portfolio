@@ -1,19 +1,18 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
-import TodoList from "./components/TodoList";
 import Intro from "./components/Intro/Intro";
+import Dummy from "./components/Dummy";
+import CanvasToImageDemo from "./components/CanvasToImageDemo";
+import Contact from "./components/Contact/Contact";
 
-function App() { 
+function App() {
   return (
     <div>
-      {/* <TodoList
-        items={items}
-        onListClick={(event) => console.log("List Clicked")}
-        onItemClick={(item, event) => console.log(item, event)}
-      /> */}
       <Navbar />
       <Intro />
+      <Contact />
+      {/* <CanvasToImageDemo /> */}
+      {/* <Dummy /> */}
     </div>
   );
 }
