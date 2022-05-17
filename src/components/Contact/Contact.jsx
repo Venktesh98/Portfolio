@@ -1,14 +1,11 @@
-import {
-  Button,
-  Paper,
-  TextareaAutosize,
-  Grid,
-  Typography,
-} from "@material-ui/core";
+import { Button, Paper, TextareaAutosize, Grid } from "@material-ui/core";
 import React, { useRef, useState } from "react";
 import InputControl from "../Controls/Input/InputControl";
 import { useStyles } from "./Contact.styles";
 import emailjs from "@emailjs/browser";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import FacebookIcon from "@material-ui/icons/Facebook";
 
 function Contact() {
   const classes = useStyles();
@@ -52,14 +49,6 @@ function Contact() {
       <form ref={form} onSubmit={handleSendEmail}>
         <Paper elevation={3} className={classes.contactFormContainer}>
           <div className={classes.contactFormContents}>
-            {/* <div className={classes.contactFormImageContainer}>
-              <img
-                src={process.env.PUBLIC_URL + "/assets/contact.jpg"}
-                alt="No Image"
-                className={classes.contactFormImage}
-              />
-            </div> */}
-
             <div className={classes.contactInfo}>
               <div className={classes.contactAwesomeStuff}>
                 Some awesome stuff is being cooked in your mind? 😎
@@ -75,7 +64,19 @@ function Contact() {
               </div>
               <br />
 
-              <div>{/* Social media link */}</div>
+              <div className={classes.socialLinksWrapper}>
+                <a href="https://github.com/Venktesh98">
+                  <GitHubIcon className={classes.icons} />
+                </a>
+
+                <a href="https://github.com/Venktesh98">
+                  <LinkedInIcon className={classes.icons} />
+                </a>
+
+                <a href="https://github.com/Venktesh98">
+                  <FacebookIcon className={classes.icons} />
+                </a>
+              </div>
             </div>
 
             <div className={classes.contactForm}>
@@ -85,7 +86,6 @@ function Contact() {
                     labelText="Name"
                     name="contactUserName"
                     inputLabelProps={inputLabelProps}
-                    // InputLabelProps={{ shrink: true }}
                   />
                 </Grid>
 
@@ -94,7 +94,6 @@ function Contact() {
                     labelText="Email"
                     name="contactUserEmail"
                     inputLabelProps={inputLabelProps}
-                    // InputLabelProps={{ shrink: true }}
                   />
                 </Grid>
 
@@ -103,7 +102,6 @@ function Contact() {
                     labelText="Subject"
                     name="contactEmailSubject"
                     inputLabelProps={inputLabelProps}
-                    // InputLabelProps={{ shrink: true }}
                   />
                 </Grid>
 

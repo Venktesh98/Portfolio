@@ -4,7 +4,7 @@ import { withStyles } from "@material-ui/core/styles";
 import { useStyles } from "./InputControl.styles";
 
 function InputControl({ labelText, name, inputLabelProps }) {
-  console.log("inputLabelProps:",inputLabelProps);
+  console.log("inputLabelProps:", inputLabelProps);
   const classes = useStyles();
 
   const ValidationTextField = withStyles({
@@ -20,8 +20,8 @@ function InputControl({ labelText, name, inputLabelProps }) {
         padding: "4px !important", // override inline-style
       },
       "& label.Mui-focused": {
-        color: "black",
-        fontWeight: 200,
+        color: "#F672A4",
+        fontWeight: 800,
       },
       "& .MuiOutlinedInput-root": {
         "& fieldset": {

@@ -10,31 +10,38 @@ export const useStyles = makeStyles((theme) => ({
     backgroundColor: "#1F2937",
     width: "100%",
   },
+  contactFormContents: {
+    display: "flex",
+    justifyContent: "space-between",
+    margin: "0 4% 3%",
+    // border: "1px solid yellow",
+
+    [theme.breakpoints.down("sm")]: {
+      border: "1px solid yellow",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      // margin: "3% 0 0",
+    },
+  },
   contactInfo: {
     // border: "2px solid yellow",
     width: "60%",
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+    },
   },
-  // contactFormImageContainer: {
-  //   width: "400px",
-  //   height: "500px",
-  //   // border: "2px solid yellow",
-  // },
-  // contactFormImage: {
-  //   width: "100%",
-  //   height: "100%",
-  // },
   contactAwesomeStuff: {
     color: "rgba(75,85,99)",
     fontSize: "26px",
     fontWeight: 600,
     // border: "1px solid yellow",
-  },
-  newOpportunity: {
-    marginTop: "3.5%",
-    width: "90%",
-    fontSize: "22px",
-    color: "rgba(156,163,175)",
-    // border: "1px solid white",
+    [theme.breakpoints.down("sm")]: {
+      // width: "100%",
+      fontSize: "26px",
+      fontWeight: 600,
+      textAlign: "center",
+    },
   },
   contactGetInTouch: {
     fontSize: "62px",
@@ -43,12 +50,46 @@ export const useStyles = makeStyles((theme) => ({
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
     fontWeight: 700,
+    [theme.breakpoints.down("sm")]: {
+      textAlign: "center",
+    },
   },
-  contactFormContents: {
-    display: "flex",
-    justifyContent: "space-between",
-    margin: "0 4% 3%",
-    // border: "1px solid yellow",
+  newOpportunity: {
+    marginTop: "3.5%",
+    width: "90%",
+    fontSize: "22px",
+    color: "rgba(156,163,175)",
+    // border: "1px solid white",
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: "auto",
+      marginRight: "auto",
+    },
+  },
+  socialLinksWrapper: {
+    marginTop: "2%",
+    // display: "inline",
+    [theme.breakpoints.down("sm")]: {
+      textAlign: "center",
+      border: "1px solid yellow",
+    },
+    "& :nth-child(1)": {
+      paddingRight: "0.6%",
+    },
+    "& :nth-child(2)": {
+      paddingRight: "0.6%",
+    },
+  },
+  // Icons
+  icons: {
+    fontSize: "40px",
+    // fill: "black",
+    fill: "white",
+
+    // paddingLeft:"10px",
+    // "&:hover": {
+    //   fill: "white",
+    //   cursor: "pointer",
+    // },
   },
   contactForm: {
     // border: "2px solid black",
@@ -57,6 +98,10 @@ export const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-around",
+    [theme.breakpoints.down("sm")]: {
+      marginTop: "5%",
+      width: "80%",
+    },
   },
   textArea: {
     width: "99%",

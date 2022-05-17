@@ -4,15 +4,8 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-const items = [
-  { text: "Buy grocery", done: true },
-  { text: "Buy fruits", done: false },
-  { text: "Buy vegis", done: false },
-];
-
 ReactDOM.render(
   <React.StrictMode>
-    {/* <App items={items} /> */}
     <App />
   </React.StrictMode>,
   document.getElementById("root")
