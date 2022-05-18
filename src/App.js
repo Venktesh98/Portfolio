@@ -3,10 +3,20 @@ import Navbar from "./components/Navbar/Navbar";
 import Intro from "./components/Intro/Intro";
 import Contact from "./components/Contact/Contact";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { useReference } from "./components/helpers/useReference";
 
 function App() {
   const [showButton, setShowButton] = useState(false);
+  const [contactRef, scrollToContact] = useReference();
+
+  const scrollToTop = () => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
 
   useEffect(() => {
     const toggleVisibility = () => {
@@ -29,20 +39,11 @@ function App() {
   //   });
   // };
 
-
-  const scrollToTop = () => {
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: "smooth"
-    })
-  }
-
   return (
     <div>
-      <Navbar />
+      <Navbar onScrollContact={scrollToContact} />
       <Intro />
-      <Contact />
+      <Contact onRef={contactRef} />
 
       {/* Scrolls to the top of the page */}
       {showButton && (
@@ -50,7 +51,6 @@ function App() {
           <KeyboardArrowUpIcon />
         </button>
       )}
-
     </div>
   );
 }

@@ -6,8 +6,10 @@ import emailjs from "@emailjs/browser";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import FacebookIcon from "@material-ui/icons/Facebook";
+import { useReference } from "../helpers/useReference";
 
-function Contact() {
+function Contact({ onRef }) {
+  console.log("In Contact");
   const classes = useStyles();
   const form = useRef("");
   const [inputLabelProps, setInputLabelProps] = useState(false);
@@ -45,7 +47,7 @@ function Contact() {
   };
 
   return (
-    <div>
+    <div ref={onRef}>
       <form ref={form} onSubmit={handleSendEmail}>
         <Paper elevation={3} className={classes.contactFormContainer}>
           <div className={classes.contactFormContents}>
@@ -69,11 +71,11 @@ function Contact() {
                   <GitHubIcon className={classes.icons} />
                 </a>
 
-                <a href="https://github.com/Venktesh98">
+                <a href="https://www.linkedin.com/in/venktesh-soma-4631aa1b5/">
                   <LinkedInIcon className={classes.icons} />
                 </a>
 
-                <a href="https://github.com/Venktesh98">
+                <a href="https://www.facebook.com/venktesh.soma/">
                   <FacebookIcon className={classes.icons} />
                 </a>
               </div>

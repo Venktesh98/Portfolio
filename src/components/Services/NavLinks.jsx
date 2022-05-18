@@ -1,6 +1,6 @@
 import React from "react";
 
-function NavLinks() {
+function NavLinks({ onScrollContact }) {
   return (
     <React.Fragment>
       <div>
@@ -20,7 +20,7 @@ function NavLinks() {
       </div>
 
       <div>
-        <li>Contact</li>
+        <li onClick={onScrollContact}>Contact</li>
       </div>
     </React.Fragment>
   );
