@@ -1,7 +1,7 @@
 import "./App.css";
-import Navbar from "./components/Navbar/Navbar";
-import Intro from "./components/Intro/Intro";
-import Contact from "./components/Contact/Contact";
+import Navbar from "./components/Portfolio/Navbar/Navbar";
+import Intro from "./components/Portfolio/Intro/Intro";
+import Contact from "./components/Portfolio/Contact/Contact";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 import { useEffect, useRef, useState } from "react";
 import { useReference } from "./components/helpers/useReference";

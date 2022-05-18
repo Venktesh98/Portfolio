@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import styles from "./Intro.module.css";
 import Typed from "react-typed";
-import { useReference } from "../helpers/useReference";
+import { useReference } from "../../helpers/useReference";
 
 function Intro() {
   // const hireMeRef = useRef();

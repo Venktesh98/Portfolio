@@ -7,7 +7,7 @@ import { useStyles } from "./Navbar.styles";
 import { Box, Hidden } from "@material-ui/core";
 import Drawer from "@material-ui/core/Drawer";
 import CloseIcon from "@material-ui/icons/Close";
-import NavLinks from "../Services/NavLinks";
+import NavLinks from "../../Services/NavLinks";
 
 const Navbar = ({ onScrollContact }) => {
   const classes = useStyles();

@@ -1,12 +1,12 @@
 import { Button, Paper, TextareaAutosize, Grid } from "@material-ui/core";
 import React, { useRef, useState } from "react";
-import InputControl from "../Controls/Input/InputControl";
+import InputControl from "../../Controls/Input/InputControl";
 import { useStyles } from "./Contact.styles";
 import emailjs from "@emailjs/browser";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import FacebookIcon from "@material-ui/icons/Facebook";
-import { useReference } from "../helpers/useReference";
+import { useReference } from "../../helpers/useReference";
 
 function Contact({ onRef }) {
   console.log("In Contact");
