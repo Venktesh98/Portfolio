@@ -68,20 +68,20 @@ export const useStyles = makeStyles((theme) => ({
   socialLinksWrapper: {
     marginTop: "2%",
     // display: "inline",
+    "& :nth-child(1)": {
+      paddingRight: "0.6%",
+    },
+    "& :nth-child(2),:nth-child(3),:nth-child(4)": {
+      paddingRight: "0.5%",
+    },
     [theme.breakpoints.down("sm")]: {
       textAlign: "center",
       border: "1px solid yellow",
     },
-    "& :nth-child(1)": {
-      paddingRight: "0.6%",
-    },
-    "& :nth-child(2)": {
-      paddingRight: "0.6%",
-    },
   },
   // Icons
   icons: {
-    fontSize: "40px",
+    fontSize: "30px",
     // fill: "black",
     fill: "white",
 

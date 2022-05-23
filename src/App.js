@@ -5,6 +5,7 @@ import Contact from "./components/Portfolio/Contact/Contact";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 import { useEffect, useRef, useState } from "react";
 import { useReference } from "./components/helpers/useReference";
+import About from "./components/Portfolio/About/About";
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -43,6 +44,7 @@ function App() {
     <div>
       <Navbar onScrollContact={scrollToContact} />
       <Intro />
+      <About />
       <Contact onRef={contactRef} />
 
       {/* Scrolls to the top of the page */}

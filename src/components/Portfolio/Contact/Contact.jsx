@@ -3,10 +3,11 @@ import React, { useRef, useState } from "react";
 import InputControl from "../../Controls/Input/InputControl";
 import { useStyles } from "./Contact.styles";
 import emailjs from "@emailjs/browser";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import FacebookIcon from "@material-ui/icons/Facebook";
-import { useReference } from "../../helpers/useReference";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaStackOverflow } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 function Contact({ onRef }) {
   console.log("In Contact");
@@ -67,16 +68,24 @@ function Contact({ onRef }) {
               <br />
 
               <div className={classes.socialLinksWrapper}>
-                <a href="https://github.com/Venktesh98">
-                  <GitHubIcon className={classes.icons} />
+                <a href="https://github.com/Venktesh98">            
+                  <FaGithub className={classes.icons}/>
                 </a>
 
                 <a href="https://www.linkedin.com/in/venktesh-soma-4631aa1b5/">
-                  <LinkedInIcon className={classes.icons} />
+                  <FaLinkedin className={classes.icons} />
+                </a>
+
+                <a href="https://stackoverflow.com/users/19043829/venkyso">
+                  <FaStackOverflow className={classes.icons} />
                 </a>
 
                 <a href="https://www.facebook.com/venktesh.soma/">
-                  <FacebookIcon className={classes.icons} />
+                  <FaFacebookSquare className={classes.icons} />
+                </a>
+
+                <a href="https://www.instagram.com/mr._.vgs/">
+                  <FaInstagram className={classes.icons} />
                 </a>
               </div>
             </div>
