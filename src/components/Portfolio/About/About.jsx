@@ -1,4 +1,3 @@
-
 import { SiHtml5 } from "react-icons/si";
 import { SiCss3 } from "react-icons/si";
 import { SiJavascript } from "react-icons/si";
@@ -25,13 +24,37 @@ import React from "react";
 function About() {
   const classes = useStyles();
   return (
-    <div>
-      <section></section>
+    <div id="about">
+      <section className={classes.aboutMeSection}>
+        <div className={classes.aboutMeAndTechnology}>About Me</div>
+        <div className={classes.whoAmI}>Who am I?</div>
+        <div className={classes.bio}>
+          Hey, I am <span className={classes.fullName}>Venktesh Soma</span> well
+          you can call me <span className={classes.fullName}>Venky </span>
+          too😊. An Enthusiastic web developer based out in Ahmedabad(India)
+          working as a Software Engineer at Cybage Sft Pvt Ltd, Always been keen
+          and facinated in learning and exploring new stuff out of the box, Also
+          consistently having an 👀 on Software Development, Promoting
+          innovative ideas and delivering results. Having an experience of more
+          then 1.5 years under the hood, Constantly been proactively excited and
+          comfortable in working with web technologies like
+          React,Node,Express.MongoDB and etc....Currently making my hands dirty
+          by developing awesome checkout pages on Ecommerce domain to get the
+          consumer better User Experience🚀.
+          <div>
+            Out of the computer💻, I like to Travel, Read Books, Watching
+            Movies.
+          </div>
+          <div>I am also trying to get better in Cricket!</div>
+        </div>
+      </section>
 
       <section className={classes.skillsSection}>
-      <div className={classes.technologiesAndTools}>
-        Technologis & Tools
-      </div>
+        <div
+          className={`${classes.aboutMeAndTechnology} ${classes.technologiesAndTools}`}
+        >
+          Technologis & Tools
+        </div>
         <div className={classes.skillsContainer}>
           <div className={classes.skillsContent} boxShadow={3}>
             <div className={classes.skillsLogo}>
