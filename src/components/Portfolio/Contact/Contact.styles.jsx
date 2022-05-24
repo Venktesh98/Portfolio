@@ -17,7 +17,7 @@ export const useStyles = makeStyles((theme) => ({
     // border: "1px solid yellow",
 
     [theme.breakpoints.down("sm")]: {
-      border: "1px solid yellow",
+      // border: "1px solid yellow",
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
@@ -76,7 +76,7 @@ export const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("sm")]: {
       textAlign: "center",
-      border: "1px solid yellow",
+      // border: "1px solid yellow",
     },
   },
   // Icons

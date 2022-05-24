@@ -9,9 +9,8 @@ import Drawer from "@material-ui/core/Drawer";
 import CloseIcon from "@material-ui/icons/Close";
 import NavLinks from "../../Services/NavLinks";
 
-const Navbar = ({ onScrollContact }) => {
+const Navbar = () => {
   const classes = useStyles();
-  const contactMeRef = useRef();
   const [toggleDrawer, setToggleDrawer] = useState(false);
 
   const handleDrawerToggle = () => {
@@ -32,7 +31,7 @@ const Navbar = ({ onScrollContact }) => {
 
             {/* <Hidden mdDown> */}
             <div className={classes.navbarLinks}>
-              <NavLinks onScrollContact={onScrollContact} />
+              <NavLinks />
             </div>
             {/* </Hidden> */}
 
@@ -72,7 +71,7 @@ const Navbar = ({ onScrollContact }) => {
           </IconButton>
           <Box className={classes.links}>
             <div className={classes.drawerLinks}>
-              <NavLinks />
+              <NavLinks onCloseDrawer={handleDrawerToggle} />
             </div>
           </Box>
         </Drawer>

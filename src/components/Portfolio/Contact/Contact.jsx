@@ -9,8 +9,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaStackOverflow } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 
-function Contact({ onRef }) {
-  console.log("In Contact");
+function Contact() {
   const classes = useStyles();
   const form = useRef("");
   const [inputLabelProps, setInputLabelProps] = useState(false);
@@ -48,7 +47,7 @@ function Contact({ onRef }) {
   };
 
   return (
-    <div ref={onRef}>
+    <div id="contact">
       <form ref={form} onSubmit={handleSendEmail}>
         <Paper elevation={3} className={classes.contactFormContainer}>
           <div className={classes.contactFormContents}>

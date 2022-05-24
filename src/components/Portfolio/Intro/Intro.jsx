@@ -1,17 +1,8 @@
 import React, { useRef } from "react";
 import styles from "./Intro.module.css";
 import Typed from "react-typed";
-import { useReference } from "../../helpers/useReference";
 
 function Intro() {
-  // const hireMeRef = useRef();
-
-  // const scrollToDown = () => {
-  //   hireMeRef.current.scrollIntoView({ behavior: "smooth" });
-  // };
-
-  const [contactRef, scrollToContact] = useReference();
-
   return (
     <div className={styles.IntroContainer}>
       <div className={styles.DetailsContainer}>
@@ -45,13 +36,7 @@ function Intro() {
             </span>
 
             <div className={styles.HireDetails}>
-              <div
-                className={styles.HireMe}
-                ref={contactRef}
-                onClick={scrollToContact}
-              >
-                Hire Me
-              </div>
+              <div className={styles.HireMe}>Hire Me</div>
               <div className={styles.Resume}>Resume</div>
             </div>
           </div>

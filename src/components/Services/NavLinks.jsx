@@ -1,26 +1,82 @@
 import React from "react";
+import { Link } from "react-scroll";
 
-function NavLinks({ onScrollContact }) {
+function NavLinks({ onCloseDrawer }) {
   return (
     <React.Fragment>
       <div>
-        <li>Home</li>
+        <li>
+          <Link
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            duration={1500}
+            onClick={onCloseDrawer}
+          >
+            Home
+          </Link>
+        </li>
       </div>
 
       <div>
-        <li>About</li>
+        <li>
+          <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            duration={1500}
+            onClick={onCloseDrawer}
+          >
+            About
+          </Link>
+        </li>
       </div>
 
       <div>
-        <li>Projects</li>
+        <li>
+          <Link
+            activeClass="active"
+            to="projects"
+            spy={true}
+            smooth={true}
+            duration={1500}
+            onClick={onCloseDrawer}
+          >
+            Projects
+          </Link>
+        </li>
       </div>
 
       <div>
-        <li>Resume</li>
+        <li>
+          <Link
+            activeClass="active"
+            to="resume"
+            spy={true}
+            smooth={true}
+            duration={1500}
+            onClick={onCloseDrawer}
+          >
+            Resume
+          </Link>
+        </li>
       </div>
 
       <div>
-        <li onClick={onScrollContact}>Contact</li>
+        <li>
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            duration={1500}
+            onClick={onCloseDrawer}
+          >
+            Contact
+          </Link>
+        </li>
       </div>
     </React.Fragment>
   );
