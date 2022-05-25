@@ -3,8 +3,7 @@ import React from "react";
 import { withStyles } from "@material-ui/core/styles";
 import { useStyles } from "./InputControl.styles";
 
-function InputControl({ labelText, name, inputLabelProps }) {
-  console.log("inputLabelProps:", inputLabelProps);
+function InputControl({ type, labelText, name, inputLabelProps }) {
   const classes = useStyles();
 
   const ValidationTextField = withStyles({
@@ -41,21 +40,15 @@ function InputControl({ labelText, name, inputLabelProps }) {
   // debugger;
   return (
     <div className={classes.root}>
-      {/* <TextField
-        id="standard-basic"
-        label={labelText}
-        name={name}
-        className={classes.textFieldStyle}
-      /> */}
       <div className={classes.textFieldContent}>
         <ValidationTextField
+          type={type || null}
           className={classes.textFieldStyle}
           label={labelText}
           name={name}
           required
           variant="outlined"
           InputLabelProps={inputLabelProps === true ? { shrink: false } : null}
-          // defaultValue=""
           id="validation-outlined-input"
         />
       </div>

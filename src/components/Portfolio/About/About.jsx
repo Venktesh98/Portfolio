@@ -36,13 +36,13 @@ function About() {
           and facinated in learning and exploring new stuff out of the box, Also
           consistently having an 👀 on Software Development, Promoting
           innovative ideas and delivering results. Having an experience of more
-          then 1.5 years under the hood, Constantly been proactively excited and
+          then 1.5 years under the hood, Excited and
           comfortable in working with web technologies like
-          React,Node,Express.MongoDB and etc....Currently making my hands dirty
+          React, Node, Express, MongoDB and etc....Currently making my hands dirty
           by developing awesome checkout pages on Ecommerce domain to get the
           consumer better User Experience🚀.
           <div>
-            Out of the computer💻, I like to Travel, Read Books, Watching
+            Out of the computer💻, I like to Travel, Reading Books, Watching
             Movies.
           </div>
           <div>I am also trying to get better in Cricket!</div>
@@ -53,7 +53,7 @@ function About() {
         <div
           className={`${classes.aboutMeAndTechnology} ${classes.technologiesAndTools}`}
         >
-          Technologis & Tools
+          Technologies & Tools
         </div>
         <div className={classes.skillsContainer}>
           <div className={classes.skillsContent} boxShadow={3}>

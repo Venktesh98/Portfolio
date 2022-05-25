@@ -50,7 +50,7 @@ export const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    margin: "2.5% 0 2%",
+    margin: "5% 0 2%",
 
     [theme.breakpoints.down("sm")]: {
       textAlign: "center",
@@ -72,7 +72,7 @@ export const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    width: "20%",
+    width: "18%",
     boxSizing: "border-box",
     margin: "15px",
     borderRadius: "5px",
@@ -89,8 +89,8 @@ export const useStyles = makeStyles((theme) => ({
 
   skillsLogo: {
     borderRadius: "50%",
-    width: "80px",
-    height: "80px",
+    width: "70px",
+    height: "70px",
     backgroundColor: "pink",
     display: "flex",
     alignItems: "center",

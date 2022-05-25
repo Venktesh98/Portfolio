@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import styles from "./Intro.module.css";
 import Typed from "react-typed";
+import { Link } from "react-scroll";
 
 function Intro() {
   return (
@@ -36,7 +37,17 @@ function Intro() {
             </span>
 
             <div className={styles.HireDetails}>
-              <div className={styles.HireMe}>Hire Me</div>
+              <div className={styles.HireMe}>
+                <Link
+                  activeClass="active"
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  duration={1500}
+                >
+                  Hire Me
+                </Link>
+              </div>
               <div className={styles.Resume}>Resume</div>
             </div>
           </div>

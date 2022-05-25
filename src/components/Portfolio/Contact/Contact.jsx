@@ -8,17 +8,20 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaStackOverflow } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import Snackbar from "@material-ui/core/Snackbar";
+import MuiAlert from "@material-ui/lab/Alert";
+import FavoriteIcon from "@material-ui/icons/Favorite";
 
 function Contact() {
   const classes = useStyles();
   const form = useRef("");
   const [inputLabelProps, setInputLabelProps] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const handleResetForm = () => {
     console.log("In handle Reset");
     form.current.reset();
     setInputLabelProps(!inputLabelProps);
-    // debugger;
   };
 
   const handleSendEmail = (event) => {
@@ -36,6 +39,7 @@ function Contact() {
         (result) => {
           console.log(result.text);
           console.log("Message sent!");
+          setOpen(true);
           handleResetForm();
           setInputLabelProps(!inputLabelProps);
         },
@@ -44,7 +48,19 @@ function Contact() {
           handleResetForm();
         }
       );
+    setOpen(false);
   };
+
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setOpen(false);
+  };
+
+  function Alert(props) {
+    return <MuiAlert elevation={6} variant="filled" {...props} />;
+  }
 
   return (
     <div id="contact">
@@ -62,13 +78,13 @@ function Contact() {
               <div className={classes.newOpportunity}>
                 Thrilled, to work on some cool stuff together? I'm always open
                 for new opportunities to learn something out of the box everyday
-                curious enough? then Let's connect. 🤝🏻
+                curious enough? then let's connect.🤝🏻
               </div>
               <br />
 
               <div className={classes.socialLinksWrapper}>
-                <a href="https://github.com/Venktesh98">            
-                  <FaGithub className={classes.icons}/>
+                <a href="https://github.com/Venktesh98">
+                  <FaGithub className={classes.icons} />
                 </a>
 
                 <a href="https://www.linkedin.com/in/venktesh-soma-4631aa1b5/">
@@ -93,6 +109,7 @@ function Contact() {
               <Grid container spacing={1}>
                 <Grid item xs={12}>
                   <InputControl
+                    type="text"
                     labelText="Name"
                     name="contactUserName"
                     inputLabelProps={inputLabelProps}
@@ -101,6 +118,7 @@ function Contact() {
 
                 <Grid item xs={12}>
                   <InputControl
+                    type="email"
                     labelText="Email"
                     name="contactUserEmail"
                     inputLabelProps={inputLabelProps}
@@ -109,6 +127,7 @@ function Contact() {
 
                 <Grid item xs={12}>
                   <InputControl
+                    type="text"
                     labelText="Subject"
                     name="contactEmailSubject"
                     inputLabelProps={inputLabelProps}
@@ -143,8 +162,25 @@ function Contact() {
               </Grid>
             </div>
           </div>
+
+          <div className={classes.bottomTagline}>
+            Coded with{" "}
+            <span className={classes.heart}>
+              <FavoriteIcon className={classes.heartIcon} />
+            </span>{" "}
+            by Venktesh Soma
+          </div>
         </Paper>
       </form>
+
+      {/* Snackbar PopUp */}
+      <div className={classes.snackbar}>
+        <Snackbar open={open} autoHideDuration={3000} onClose={handleClose}>
+          <Alert onClose={handleClose} severity="success">
+            Details Submitted Successfully!
+          </Alert>
+        </Snackbar>
+      </div>
     </div>
   );
 }

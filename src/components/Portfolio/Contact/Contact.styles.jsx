@@ -94,7 +94,6 @@ export const useStyles = makeStyles((theme) => ({
   contactForm: {
     // border: "2px solid black",
     width: "40%",
-    // height: "90vh",
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-around",
@@ -114,9 +113,6 @@ export const useStyles = makeStyles((theme) => ({
       borderColor: "#14202E",
       borderWidth: 2,
       borderRadius: "4px",
-      // padding: "4px !important",
-      // borderLeftWidth: 7,
-      // borderColor: "#F86395",
     },
     "&:valid": {
       padding: "4px !important",
@@ -132,6 +128,25 @@ export const useStyles = makeStyles((theme) => ({
     fontWeight: 600,
     "&:hover": {
       backgroundColor: "#14202E",
+    },
+  },
+  bottomTagline: {
+    fontSize: "18px",
+    fontWeight: "400",
+    // color: "rgba(75,85,99)",
+    color: "rgb(255,207,241)",
+    display: "flex",
+    justifyContent: "center",
+  },
+  heart: {},
+  heartIcon: {
+    fill: "red",
+    padding: "0 5px",
+  },
+  snackbar: {
+    width: "100%",
+    "& > * + *": {
+      marginTop: theme.spacing(2),
     },
   },
 }));
