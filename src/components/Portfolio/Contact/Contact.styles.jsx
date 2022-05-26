@@ -8,6 +8,7 @@ export const useStyles = makeStyles((theme) => ({
     padding: "4% 0 1% 0",
     margin: "3% 0 0",
     backgroundColor: "#1F2937",
+    // backgroundColor: "#14202E",
     width: "100%",
   },
   contactFormContents: {

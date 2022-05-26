@@ -38,13 +38,13 @@ function NavLinks({ onCloseDrawer }) {
         <li>
           <Link
             activeClass="active"
-            to="projects"
+            to="resume"
             spy={true}
             smooth={true}
             duration={1500}
             onClick={onCloseDrawer}
           >
-            Projects
+            Resume
           </Link>
         </li>
       </div>
@@ -53,13 +53,13 @@ function NavLinks({ onCloseDrawer }) {
         <li>
           <Link
             activeClass="active"
-            to="resume"
+            to="projects"
             spy={true}
             smooth={true}
             duration={1500}
             onClick={onCloseDrawer}
           >
-            Resume
+            Projects
           </Link>
         </li>
       </div>

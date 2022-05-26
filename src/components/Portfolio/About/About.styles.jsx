@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core";
 
 export const useStyles = makeStyles((theme) => ({
   aboutMeSection: {
-    marginTop: "10%",
+    marginTop: "8.3%",
   },
   whoAmI: {
     color: "rgba(75,85,99)",
