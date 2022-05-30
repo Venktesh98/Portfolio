@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import About from "./components/Portfolio/About/About";
 import { animateScroll as scroll } from "react-scroll";
 import Resume from "./components/Portfolio/Resume/Resume";
+import Projects from "./components/Portfolio/Projects/Projects";
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -34,7 +35,9 @@ function App() {
       <Intro />
       <About />
       <Resume />
+      <Projects />
       <Contact />
+
 
       {/* Scrolls to the top of the page */}
       {showButton && (

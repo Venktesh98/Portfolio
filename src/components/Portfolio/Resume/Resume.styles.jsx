@@ -4,7 +4,7 @@ export const useStyles = makeStyles((theme) => ({
   resumeSection: {
     position: "relative",
     // border: "2px solid yellow",
-    marginTop: "5%",
+    marginTop: "8%",
   },
   parallex: {
     // backgroundImage: `linear-gradient(rgba(20, 32, 46, 0.2), rgb(31 41 55 / 70%)),url(${
@@ -13,7 +13,7 @@ export const useStyles = makeStyles((theme) => ({
     backgroundImage: `linear-gradient(rgba(20, 32, 46, 0.2), rgb(31 41 55 / 70%)),url(${
       process.env.PUBLIC_URL + "/assets/laptopPen.jpg"
     })`,
-    minHeight: "350px",
+    minHeight: "370px",
     backgroundAttachment: "fixed",
     backgroundPosition: "bottom",
     // backgroundRepeat: "no-repeat",

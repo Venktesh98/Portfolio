@@ -1,5 +1,5 @@
 import React from "react";
-import { useStyles } from "./Resume.style";
+import { useStyles } from "./Resume.styles";
 
 function Resume() {
   const classes = useStyles();
