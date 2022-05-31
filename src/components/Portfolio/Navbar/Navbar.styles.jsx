@@ -81,9 +81,11 @@ export const useStyles = makeStyles((theme) => ({
   navbarLinks: {
     display: "flex",
     justifyContent: "space-between",
+    alignItems:"center",
     width: "40%",
     // border: "2px solid rgb(226, 223, 15)",
     marginRight: "2%",
+    height:"27px",
 
     "& li": {
       color: "rgb(172, 170, 170)",
@@ -95,6 +97,7 @@ export const useStyles = makeStyles((theme) => ({
     "& li:hover": {
       color: "rgb(255, 255, 255)",
       cursor: "pointer",
+      borderBottom: "2px solid white"
     },
 
     [theme.breakpoints.down("md")]: {
