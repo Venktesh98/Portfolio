@@ -26,7 +26,7 @@ function Projects() {
               <CardMedia
                 className={classes.media}
                 image={projectItem.projectImage}
-                title="Contemplative Reptile"
+                title={projectItem.projectName}
               />
               <CardContent className={classes.cardContent}>
                 <div className={classes.projectTitle}>{projectItem.projectName}</div>

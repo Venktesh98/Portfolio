@@ -10,9 +10,8 @@ export const useStyles = makeStyles((theme) => ({
     // backgroundImage: `linear-gradient(rgba(20, 32, 46, 0.2), rgb(31 41 55 / 70%)),url(${
     //   process.env.PUBLIC_URL + "/assets/laptop.jpg"
     // })`,
-    backgroundImage: `linear-gradient(rgba(20, 32, 46, 0.2), rgb(31 41 55 / 70%)),url(${
-      process.env.PUBLIC_URL + "/assets/laptopPen.jpg"
-    })`,
+    backgroundImage: `linear-gradient(rgba(20, 32, 46, 0.2), rgb(31 41 55 / 70%)),url(${process.env.PUBLIC_URL + "/assets/laptopPen.jpg"
+      })`,
     minHeight: "370px",
     backgroundAttachment: "fixed",
     backgroundPosition: "bottom",
@@ -34,7 +33,8 @@ export const useStyles = makeStyles((theme) => ({
     textAlign: "center",
   },
   resumeCopy: {
-    marginTop: "8%",
+    position: "absolute",
+    top: "75%",
     fontSize: "18px",
     border: "1px solid white",
     width: "13.5%",
@@ -48,6 +48,14 @@ export const useStyles = makeStyles((theme) => ({
       border: "1px solid white",
       backgroundColor: "rgba(20, 32, 46, 0.5)",
       cursor: "pointer",
+    },
+
+    [theme.breakpoints.down("md")]: {
+      width: "16%"
+    },
+
+    [theme.breakpoints.down("md")]: {
+      width: "50%"
     },
   },
   resumeCopyLine: {

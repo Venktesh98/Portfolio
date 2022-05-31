@@ -48,7 +48,14 @@ function Intro() {
                   Hire Me
                 </Link>
               </div>
-              <div className={styles.Resume}>Resume</div>
+
+              <a
+                href="https://drive.google.com/file/d/1JpZPm3MwzeIUe5d5V-jBHRhl6BgUi7IF/view?usp=sharing"
+                download
+                className={styles.Resume}
+              >Resume
+              </a>
+
             </div>
           </div>
         </div>
