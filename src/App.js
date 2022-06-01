@@ -38,7 +38,6 @@ function App() {
       <Projects />
       <Contact />
 
-
       {/* Scrolls to the top of the page */}
       {showButton && (
         <button onClick={scrollToTop} className="back-to-top">

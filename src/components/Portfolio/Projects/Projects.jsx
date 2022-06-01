@@ -21,7 +21,7 @@ function Projects() {
 
       <div className={classes.projectsWrapper}>
         {projectLists.map((projectItem) => (
-          <Card className={classes.projectCard}>
+          <Card className={classes.projectCard} key={projectItem.id}>
             <CardActionArea>
               <CardMedia
                 className={classes.media}
