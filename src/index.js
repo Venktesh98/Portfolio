@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import BackDropComponent from "./components/Portfolio/Backdrop/BackDropComponent";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BackDropComponent />
   </React.StrictMode>,
   document.getElementById("root")
 );
