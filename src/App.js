@@ -30,7 +30,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className="fadein-on-mount">
       <Navbar />
       <Intro />
       <About />

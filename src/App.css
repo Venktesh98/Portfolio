@@ -16,3 +16,21 @@
 .back-to-top:hover {
   background: rgb(248, 99, 149);
 }
+.fadein-on-mount {
+  animation: fadeInQuick 1.8s;
+}
+
+@keyframes fadeInQuick {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
