@@ -97,7 +97,7 @@ export const useStyles = makeStyles((theme) => ({
     "& li:hover": {
       color: "rgb(255, 255, 255)",
       cursor: "pointer",
-      borderBottom: "2px solid white"
+      borderBottom: "1.5px solid white"
     },
 
     [theme.breakpoints.down("md")]: {

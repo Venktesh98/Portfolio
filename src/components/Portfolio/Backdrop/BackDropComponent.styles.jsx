@@ -16,7 +16,11 @@ export const useStyles = makeStyles((theme) => ({
         color: "white",
         backgroundColor: "transparent",
         fontStyle: "italic",
-        fontSize: "18px"
+        fontSize: "18px",
+
+        [theme.breakpoints.down("sm")]: {
+            textAlign: "center",
+        },
     },
     quoteLeft: {
         height: "13px",
