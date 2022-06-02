@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import styles from "./Intro.module.css";
 import Typed from "react-typed";
 import { Link } from "react-scroll";

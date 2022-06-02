@@ -19,7 +19,7 @@ function BackDropComponent() {
     setLoading(false);
   };
 
-  const onQuoteChange = useCallback(async () => {
+  const onQuoteChange = useCallback(() => {
     const randomQuote =
       QuotesList[Math.floor(Math.random() * QuotesList.length)];
     setTimeout(() => {
