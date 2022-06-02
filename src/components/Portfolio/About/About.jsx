@@ -56,7 +56,7 @@ function About() {
           Technologies & Tools
         </div>
         <div className={classes.skillsContainer}>
-          <div className={classes.skillsContent} boxShadow={3}>
+          <div className={classes.skillsContent}>
             <div className={classes.skillsLogo}>
               <SiHtml5 className={classes.skillImg} />
             </div>

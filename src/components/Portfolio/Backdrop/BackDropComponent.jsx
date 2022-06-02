@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Backdrop from "@material-ui/core/Backdrop";
 import { useStyles } from "./BackDropComponent.styles";
 import { useQuotes } from "../../Services/useQuotes";
@@ -19,21 +19,21 @@ function BackDropComponent() {
     setLoading(false);
   };
 
-  const onQuoteChange = useCallback(() => {
+  const onQuoteChange = () => {
     const randomQuote =
       QuotesList[Math.floor(Math.random() * QuotesList.length)];
     setTimeout(() => {
       setQuote(randomQuote);
       setDisplayQuote(!displayQuote)
     }, 500);
-  }, []);
+  }
 
   useEffect(() => {
     onQuoteChange();
     setTimeout(() => {
       setLoading(false);
     }, 5500);
-  }, [onQuoteChange]);
+  }, []);
 
   return (
     <div>

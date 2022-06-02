@@ -63,9 +63,9 @@ function Intro() {
 
       <div className={styles.IntroImageContainer}>
         <img
-          src={process.env.PUBLIC_URL + "/assets/vgs.jpeg"}
-          //   src={process.env.PUBLIC_URL + "/assets/programmer.gif"}
+          src={process.env.PUBLIC_URL + "/assets/vgs.jpeg"}         
           className={styles.IntroImage}
+          alt="Not loaded"
         />
       </div>
     </div>

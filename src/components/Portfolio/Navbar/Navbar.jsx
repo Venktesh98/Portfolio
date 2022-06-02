@@ -1,10 +1,10 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import { useStyles } from "./Navbar.styles";
-import { Box, Hidden } from "@material-ui/core";
+import { Box } from "@material-ui/core";
 import Drawer from "@material-ui/core/Drawer";
 import CloseIcon from "@material-ui/icons/Close";
 import NavLinks from "../../Services/NavLinks";
@@ -29,13 +29,10 @@ const Navbar = () => {
               </li>
             </div>
 
-            {/* <Hidden mdDown> */}
             <div className={classes.navbarLinks}>
               <NavLinks />
             </div>
-            {/* </Hidden> */}
 
-            {/* <Hidden lgUp> */}
             <IconButton
               edge="start"
               className={classes.menuButton}
@@ -45,12 +42,11 @@ const Navbar = () => {
             >
               <MenuIcon />
             </IconButton>
-            {/* </Hidden> */}
+
           </Toolbar>
         </AppBar>
 
         {/* ............... Navigation Drawer .................. */}
-        {/* <Hidden lgUp> */}
         <Drawer
           variant="temporary"
           anchor={"right"}
@@ -75,7 +71,6 @@ const Navbar = () => {
             </div>
           </Box>
         </Drawer>
-        {/* </Hidden> */}
       </div>
     </>
   );
