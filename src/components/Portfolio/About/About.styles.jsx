@@ -19,7 +19,7 @@ export const useStyles = makeStyles((theme) => ({
     margin: "0 auto",
     lineHeight: "35px",
     color: "white",
-    fontWeight: 300,
+    fontWeight: 200,
 
     "& :nth-child(1),:nth-child(2)": {
       lineHeight: "35px",

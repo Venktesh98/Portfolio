@@ -17,6 +17,7 @@ export const useStyles = makeStyles((theme) => ({
         backgroundColor: "transparent",
         fontStyle: "italic",
         fontSize: "18px",
+        textAlign: "center",
 
         [theme.breakpoints.down("sm")]: {
             textAlign: "center",

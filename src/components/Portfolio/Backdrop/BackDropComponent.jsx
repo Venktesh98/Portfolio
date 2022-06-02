@@ -32,7 +32,7 @@ function BackDropComponent() {
     onQuoteChange();
     setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 5500);
   }, [onQuoteChange]);
 
   return (

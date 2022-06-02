@@ -81,12 +81,28 @@ export const useQuotes = () => {
             author: "Tony Hsieh"
         },
         {
-            quote: " Don’t see others doing better than you, beat your own records every day because success is a fight between you and yourself.",
+            quote: "Don’t see others doing better than you, beat your own records every day because success is a fight between you and yourself.",
             author: "Chandrasekhar Azad"
         },
         {
-            quote: " Don’t take rest after your first victory because if you fail in second, more lips are waiting to say that your first victory was just luck.",
+            quote: "Don’t take rest after your first victory because if you fail in second, more lips are waiting to say that your first victory was just luck.",
             author: "A. P. J. Abdul Kalam"
+        },
+        {
+            quote: "However difficult life may seem, there is always something you can do and succeed at.",
+            author: "Stephen Hawking"
+        },
+        {
+            quote: "When love and skill work together, expect a masterpiece.",
+            author: "John Ruskin"
+        },
+        {
+            quote: "In order to succeed you must fail, so that you know what not to do the next time.",
+            author: "Anthony J. D'Angelo"
+        },
+        {
+            quote: "Take up one idea. Make that one idea your life - think of it, dream of it, live on that idea. Let the brain, muscles, nerves, every part of your body, be full of that idea, and just leave every other idea alone. This is the way to success.",
+            author: "Swami Vivekananda"
         },
     ]
     return QuotesList
