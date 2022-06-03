@@ -18,5 +18,6 @@ After all the dependencies gets installed then run **npm start**, It will start 
 * react-typed
 * react-scroll
 * react-icons
+* EmailJS
 
 
