@@ -1,6 +1,8 @@
-# Portfolio
+# Portfolio 
 
 A Single Page and fully responsive portfolio application where it gives you a breif about my background details including my skills, working, projects etc.
+
+**[Live Demo](https://venkteshsoma.netlify.app/)**
 
 ## Requisites to run project
 
@@ -17,4 +19,4 @@ After all the dependencies gets installed then run **npm start**, It will start 
 * react-scroll
 * react-icons
 
-[Live Demo](https://venkteshsoma.netlify.app/)
+
