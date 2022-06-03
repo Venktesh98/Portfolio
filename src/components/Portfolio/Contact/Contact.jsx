@@ -78,23 +78,28 @@ function Contact() {
               <br />
 
               <div className={classes.socialLinksWrapper}>
-                <a href="https://github.com/Venktesh98">
+                <a href="https://github.com/Venktesh98" target="_blank"
+                  rel="noopener noreferrer">
                   <FaGithub className={classes.icons} />
                 </a>
 
-                <a href="https://www.linkedin.com/in/venktesh-soma-4631aa1b5/">
+                <a href="https://www.linkedin.com/in/venktesh-soma-4631aa1b5/" target="_blank"
+                  rel="noopener noreferrer">
                   <FaLinkedin className={classes.icons} />
                 </a>
 
-                <a href="https://stackoverflow.com/users/19043829/venkyso">
+                <a href="https://stackoverflow.com/users/19043829/venkyso" target="_blank"
+                  rel="noopener noreferrer">
                   <FaStackOverflow className={classes.icons} />
                 </a>
 
-                <a href="https://www.facebook.com/venktesh.soma/">
+                <a href="https://www.facebook.com/venktesh.soma/" target="_blank"
+                  rel="noopener noreferrer">
                   <FaFacebookSquare className={classes.icons} />
                 </a>
 
-                <a href="https://www.instagram.com/mr._.vgs/">
+                <a href="https://www.instagram.com/mr._.vgs/" target="_blank"
+                  rel="noopener noreferrer">
                   <FaInstagram className={classes.icons} />
                 </a>
               </div>

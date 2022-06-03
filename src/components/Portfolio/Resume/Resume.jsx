@@ -15,17 +15,12 @@ function Resume() {
         <a
           href="https://drive.google.com/file/d/1JpZPm3MwzeIUe5d5V-jBHRhl6BgUi7IF/view?usp=sharing"
           download
+          target="_blank"
+          rel="noopener noreferrer"
           className={classes.resumeCopyLine}
         >
           Get a copy
-        </a>
-        {/* <a
-          href={process.env.PUBLIC_URL + "/assets/contact.jpg"}
-          download
-          className={classes.resumeCopyLine}
-        >
-          Get a copy
-        </a> */}
+        </a>    
       </div>
     </section>
   );

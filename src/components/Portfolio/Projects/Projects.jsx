@@ -31,7 +31,8 @@ function Projects() {
               <CardContent className={classes.cardContent}>
                 <div className={classes.projectTitle}>{projectItem.projectName}</div>
                 <div className={classes.backupOptionsContainer}>
-                  <a href={projectItem.projectLink} className={classes.backupOptionsLink}>
+                  <a href={projectItem.projectLink} className={classes.backupOptionsLink} target="_blank"
+                    rel="noopener noreferrer">
                     <span className={classes.backupOptionsText}>{projectItem.isProjectInGitlab ? "Gitlab" : "Github"}</span> <> {projectItem.isProjectInGitlab ? <SiGitlab className={classes.backupIcon} /> : <SiGithub className={classes.backupIcon} />}</>
                   </a>
                 </div>
