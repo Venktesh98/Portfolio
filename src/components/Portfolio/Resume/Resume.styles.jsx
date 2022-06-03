@@ -3,7 +3,6 @@ import { makeStyles } from "@material-ui/core";
 export const useStyles = makeStyles((theme) => ({
   resumeSection: {
     position: "relative",
-    // border: "2px solid yellow",
     marginTop: "8%",
   },
   parallex: {
@@ -15,7 +14,6 @@ export const useStyles = makeStyles((theme) => ({
     minHeight: "370px",
     backgroundAttachment: "fixed",
     backgroundPosition: "bottom",
-    // backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     margin: "0",
   },

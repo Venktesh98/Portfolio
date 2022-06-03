@@ -4,17 +4,14 @@ export const drawerWidth = 250;
 export const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    // border: "1px solid yellow",
     position: "relative",
   },
   navbar: {
     backgroundColor: "#14202e",
     boxShadow: "none",
-    // border: "1px solid pink",
     marginTop: "2%",
   },
   menuButton: {
-    // marginLeft: theme.spacing(2),
     display: "none",
     [theme.breakpoints.down("sm")]: {
       display: "block",
@@ -25,11 +22,6 @@ export const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
     marginLeft: "3%",
-
-    [theme.breakpoints.up("md")]: {
-      //   border: "1px solid red",
-      // marginLeft: "3%",
-    },
   },
   LogoName: {
     position: "absolute",
@@ -38,13 +30,10 @@ export const useStyles = makeStyles((theme) => ({
     fontSize: "30px",
     fontWeight: "500",
     zIndex: 100,
-    // border: "1px solid pink",
     marginTop: "-1.8%",
 
     [theme.breakpoints.down("md")]: {
       marginTop: "-1.8%",
-      //   border: "1px solid red",
-      // marginLeft: "3%",
     },
 
     "&::after": {
@@ -63,7 +52,6 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   FirstLetter: {
-    // position: "absolute",
     position: "relative",
     zIndex: "1",
     color: "#14202e",
@@ -81,11 +69,10 @@ export const useStyles = makeStyles((theme) => ({
   navbarLinks: {
     display: "flex",
     justifyContent: "space-between",
-    alignItems:"center",
+    alignItems: "center",
     width: "40%",
-    // border: "2px solid rgb(226, 223, 15)",
     marginRight: "2%",
-    height:"27px",
+    height: "27px",
 
     "& li": {
       color: "rgb(172, 170, 170)",
@@ -105,21 +92,17 @@ export const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.down("sm")]: {
-      // width: "50%",
       display: "none",
     },
   },
-
   drawerPaper: {
     width: drawerWidth,
-    // backgroundColor: "rgb(0,0,0,0.7)",
     backgroundColor: "rgb(20,32,46,0.9)",
   },
   closeMenuButton: {
     margin: "3% auto 0 3%",
     color: "white",
   },
-
   drawerLinks: {
     color: "white",
     fontSize: "18px",
@@ -134,8 +117,6 @@ export const useStyles = makeStyles((theme) => ({
     "& li:hover": {
       color: "rgb(243, 149, 180)",
       cursor: "pointer",
-      // backgroundColor: "rgb(0,0,0,0.7)",
-      // borderRadius: "22px",
     },
   },
 }));

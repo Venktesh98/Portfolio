@@ -2,31 +2,23 @@ import { makeStyles } from "@material-ui/core";
 
 export const useStyles = makeStyles((theme) => ({
   contactFormContainer: {
-    // border: "1px solid white",
-    // display: "flex",
-    // justifyContent: "space-between",
     padding: "4% 0 1% 0",
     margin: "3% 0 0",
     backgroundColor: "#1F2937",
-    // backgroundColor: "#14202E",
     width: "100%",
   },
   contactFormContents: {
     display: "flex",
     justifyContent: "space-between",
     margin: "0 4% 3%",
-    // border: "1px solid yellow",
 
     [theme.breakpoints.down("sm")]: {
-      // border: "1px solid yellow",
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
-      // margin: "3% 0 0",
     },
   },
   contactInfo: {
-    // border: "2px solid yellow",
     width: "60%",
     [theme.breakpoints.down("sm")]: {
       width: "100%",
@@ -36,9 +28,7 @@ export const useStyles = makeStyles((theme) => ({
     color: "rgba(75,85,99)",
     fontSize: "26px",
     fontWeight: 600,
-    // border: "1px solid yellow",
     [theme.breakpoints.down("sm")]: {
-      // width: "100%",
       fontSize: "26px",
       fontWeight: 600,
       textAlign: "center",
@@ -60,7 +50,6 @@ export const useStyles = makeStyles((theme) => ({
     width: "90%",
     fontSize: "22px",
     color: "rgba(156,163,175)",
-    // border: "1px solid white",
     [theme.breakpoints.down("sm")]: {
       marginLeft: "auto",
       marginRight: "auto",
@@ -68,7 +57,6 @@ export const useStyles = makeStyles((theme) => ({
   },
   socialLinksWrapper: {
     marginTop: "2%",
-    // display: "inline",
     "& :nth-child(1)": {
       paddingRight: "0.6%",
     },
@@ -77,23 +65,14 @@ export const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("sm")]: {
       textAlign: "center",
-      // border: "1px solid yellow",
     },
   },
   // Icons
   icons: {
     fontSize: "30px",
-    // fill: "black",
     fill: "white",
-
-    // paddingLeft:"10px",
-    // "&:hover": {
-    //   fill: "white",
-    //   cursor: "pointer",
-    // },
   },
   contactForm: {
-    // border: "2px solid black",
     width: "40%",
     display: "flex",
     flexDirection: "column",
@@ -134,12 +113,10 @@ export const useStyles = makeStyles((theme) => ({
   bottomTagline: {
     fontSize: "18px",
     fontWeight: "400",
-    // color: "rgba(75,85,99)",
     color: "rgb(255,207,241)",
     display: "flex",
     justifyContent: "center",
   },
-  heart: {},
   heartIcon: {
     fill: "red",
     padding: "0 5px",

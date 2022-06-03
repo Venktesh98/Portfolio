@@ -14,7 +14,6 @@ const Navbar = () => {
   const [toggleDrawer, setToggleDrawer] = useState(false);
 
   const handleDrawerToggle = () => {
-    console.log("In handleDrawerToggle");
     setToggleDrawer(!toggleDrawer);
   };
   return (

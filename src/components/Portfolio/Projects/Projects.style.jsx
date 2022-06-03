@@ -49,7 +49,6 @@ export const useStyles = makeStyles((theme) => ({
 
   },
   backupOptionsContainer: {
-    // border: "1px solid white",
     width: "30%",
     display: "flex",
     justifyContent: "space-around",

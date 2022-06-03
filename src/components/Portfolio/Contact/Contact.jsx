@@ -19,14 +19,12 @@ function Contact() {
   const [open, setOpen] = useState(false);
 
   const handleResetForm = () => {
-    console.log("In handle Reset");
     form.current.reset();
     setInputLabelProps(!inputLabelProps);
   };
 
   const handleSendEmail = (event) => {
     event.preventDefault();
-    console.log("In handle sunmit!");
 
     emailjs
       .sendForm(
@@ -37,14 +35,11 @@ function Contact() {
       )
       .then(
         (result) => {
-          console.log(result.text);
-          console.log("Message sent!");
           setOpen(true);
           handleResetForm();
           setInputLabelProps(!inputLabelProps);
         },
         (error) => {
-          console.log(error.text);
           handleResetForm();
         }
       );

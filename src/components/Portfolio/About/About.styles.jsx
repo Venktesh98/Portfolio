@@ -14,7 +14,6 @@ export const useStyles = makeStyles((theme) => ({
   bio: {
     fontSize: "22px",
     textAlign: "center",
-    // border: "2px solid yellow",
     width: "80%",
     margin: "0 auto",
     lineHeight: "35px",
@@ -25,11 +24,9 @@ export const useStyles = makeStyles((theme) => ({
       lineHeight: "35px",
     },
   },
-
   fullName: {
     fontWeight: "500",
   },
-
   aboutMeAndTechnology: {
     fontSize: "58px",
     color: "#F86395",
@@ -38,13 +35,6 @@ export const useStyles = makeStyles((theme) => ({
     WebkitTextFillColor: "transparent",
     fontWeight: 700,
     textAlign: "center",
-    // marginBottom: "2.5%",
-
-    // [theme.breakpoints.down("sm")]: {
-    //   textAlign: "center",
-    //   marginTop: "10%",
-    //   lineHeight: "70px",
-    // },
   },
   technologiesAndTools: {
     display: "flex",
@@ -60,12 +50,9 @@ export const useStyles = makeStyles((theme) => ({
   },
   skillsContainer: {
     display: "flex",
-    // justifyContent: "space-around",
     justifyContent: "center",
     alignItems: "center",
     flexWrap: "wrap",
-    // border:"2px solid yellow",
-    // width:"90%"
   },
   skillsContent: {
     backgroundColor: "#1F2937",
@@ -79,14 +66,12 @@ export const useStyles = makeStyles((theme) => ({
     boxShadow: "0px 1px 3px 0 white",
 
     "&:hover": {
-      //   fill: "yellow",
       cursor: "pointer",
     },
     [theme.breakpoints.down("sm")]: {
       width: "25%",
     },
   },
-
   skillsLogo: {
     borderRadius: "50%",
     width: "70px",
@@ -107,7 +92,6 @@ export const useStyles = makeStyles((theme) => ({
     width: "55px",
     height: "55px",
   },
-
   skillsTitle: {
     color: "white",
   },
