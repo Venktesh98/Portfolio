@@ -17,4 +17,4 @@ After all the dependencies gets installed then run **npm start**, It will start 
 * react-scroll
 * react-icons
 
-[Live Demo] (https://venkteshsoma.netlify.app/)
+[Live Demo](https://venkteshsoma.netlify.app/)
