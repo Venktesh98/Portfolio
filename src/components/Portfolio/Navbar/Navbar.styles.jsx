@@ -23,49 +23,75 @@ export const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     marginLeft: "3%",
   },
+  // LogoName: {
+  //   position: "absolute",
+  //   color: "white",
+  //   listStyle: "none",
+  //   fontSize: "30px",
+  //   fontWeight: "500",
+  //   zIndex: 100,
+  //   marginTop: "-1.8%",
+
+  //   [theme.breakpoints.down("md")]: {
+  //     marginTop: "-1.8%",
+  //   },
+
+  //   "&::after": {
+  //     border: "1px solid pink",
+  //     position: "absolute",
+  //     left: "-2.3%",
+  //     top: "-18%",
+  //     backgroundColor: "rgb(248, 99, 149)",
+  //     content: '""',
+  //     height: " 60px",
+  //     width: "60px",
+  //     borderRadius: "50%",
+  //   },
+  //   "&:hover": {
+  //     cursor: "pointer",
+  //   },
+  // },
+  // FirstLetter: {
+  //   position: "relative",
+  //   zIndex: "1",
+  //   color: "#14202e",
+  //   fontSize: "35px",
+  //   fontWeight: "800",
+  //   left: "30%",
+
+  //   "&::after": {
+  //     content: '"gs"',
+  //     color: "white",
+  //     fontSize: "30.5px",
+  //     fontWeight: "500",
+  //   },
+  // },
+
   LogoName: {
-    position: "absolute",
-    color: "white",
+    position: "relative",
+    height: "60px",
+    width: "60px",
+    // paddingBottom: "50%",
+    backgroundColor: "rgb(248, 99, 149)",
+    borderRadius: "50%",
+    color: "#14202e",
     listStyle: "none",
-    fontSize: "30px",
-    fontWeight: "500",
-    zIndex: 100,
-    marginTop: "-1.8%",
+    fontSize: "35px",
+    fontWeight: "800",
+    border: "1px solid pink",
 
-    [theme.breakpoints.down("md")]: {
-      marginTop: "-1.8%",
-    },
-
-    "&::after": {
-      border: "1px solid pink",
-      position: "absolute",
-      left: "-2.3%",
-      top: "-18%",
-      backgroundColor: "rgb(248, 99, 149)",
-      content: '""',
-      height: " 60px",
-      width: "60px",
-      borderRadius: "50%",
-    },
     "&:hover": {
       cursor: "pointer",
     },
   },
   FirstLetter: {
-    position: "relative",
-    zIndex: "1",
-    color: "#14202e",
-    fontSize: "35px",
-    fontWeight: "800",
-    left: "30%",
-
-    "&::after": {
-      content: '"gs"',
-      color: "white",
-      fontSize: "30.5px",
-      fontWeight: "500",
-    },
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    margin: 0
   },
+
   navbarLinks: {
     display: "flex",
     justifyContent: "space-between",
