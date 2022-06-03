@@ -1,6 +1,6 @@
 # Portfolio 
 
-A Single Page and fully responsive portfolio application where it gives you a breif about my background details including my skills, working, projects etc.
+A Single Page and fully responsive portfolio application where it gives you a brief about my background details including my skills, work, projects etc.
 
 **[Live Demo](https://venkteshsoma.netlify.app/)**
 
