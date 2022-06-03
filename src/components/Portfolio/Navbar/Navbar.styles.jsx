@@ -71,7 +71,6 @@ export const useStyles = makeStyles((theme) => ({
     position: "relative",
     height: "60px",
     width: "60px",
-    // paddingBottom: "50%",
     backgroundColor: "rgb(248, 99, 149)",
     borderRadius: "50%",
     color: "#14202e",
@@ -79,19 +78,32 @@ export const useStyles = makeStyles((theme) => ({
     fontSize: "35px",
     fontWeight: "800",
     border: "1px solid pink",
+    marginTop: "-1.9%",
+
+    [theme.breakpoints.down("md")]: {
+      marginTop: "1%",
+    },
 
     "&:hover": {
       cursor: "pointer",
     },
   },
-  FirstLetter: {
+  navIcon: {
     position: "absolute",
     top: "50%",
-    left: "50%",
+    left: "48%",
     transform: "translate(-50%, -50%)",
-    margin: 0
+    margin: 0,
   },
-
+  navIconLetters: {
+    position: "absolute",
+    transform: "translate(-50%, -50%)",
+    top: "50%",
+    left: "92%",
+    color: "white",
+    fontSize: "31px",
+    fontWeight: "500",
+  },
   navbarLinks: {
     display: "flex",
     justifyContent: "space-between",

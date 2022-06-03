@@ -23,7 +23,8 @@ const Navbar = () => {
           <Toolbar>
             <div className={classes.title}>
               <li className={classes.LogoName}>
-                <span className={classes.FirstLetter}>V</span>
+                <span className={classes.navIcon}>V</span>
+                <span className={classes.navIconLetters}>gs</span>
                 <br />
               </li>
             </div>
