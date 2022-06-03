@@ -94,6 +94,10 @@ export const useStyles = makeStyles((theme) => ({
     left: "49%",
     transform: "translate(-50%, -50%)",
     margin: 0,
+
+    [theme.breakpoints.down("xs")]: {
+      top: "52%",
+    },
   },
   navIconLetters: {
     position: "absolute",
@@ -103,6 +107,10 @@ export const useStyles = makeStyles((theme) => ({
     color: "white",
     fontSize: "31px",
     fontWeight: "500",
+
+    [theme.breakpoints.down("xs")]: {
+      top: "54%",
+    }
   },
   navbarLinks: {
     display: "flex",
