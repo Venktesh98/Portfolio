@@ -91,7 +91,7 @@ export const useStyles = makeStyles((theme) => ({
   navIcon: {
     position: "absolute",
     top: "50%",
-    left: "48%",
+    left: "49%",
     transform: "translate(-50%, -50%)",
     margin: 0,
   },
