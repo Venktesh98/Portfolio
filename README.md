@@ -1,6 +1,6 @@
 # Portfolio
 
-A Single Page Application portfolio where it gives you a breif about my background details including my skills, working, projects etc.
+A Single Page and fully responsive portfolio application where it gives you a breif about my background details including my skills, working, projects etc.
 
 ## Requisites to run project
 
