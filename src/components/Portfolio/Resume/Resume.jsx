@@ -7,7 +7,7 @@ function Resume() {
     <section className={classes.resumeSection} id="resume">
       <div className={classes.parallex}></div>
       <div className={classes.resumeHeaderLineAndResumeCopy}>
-        Check Out My Resume!
+        Grab my Resume!
       </div>
       <div
         className={`${classes.resumeHeaderLineAndResumeCopy} ${classes.resumeCopy}`}
