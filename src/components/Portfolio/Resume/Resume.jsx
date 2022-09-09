@@ -13,7 +13,7 @@ function Resume() {
         className={`${classes.resumeHeaderLineAndResumeCopy} ${classes.resumeCopy}`}
       >
         <a
-          href="https://drive.google.com/file/d/1z4u3-YRAfy9m1EEHpC2Av8SrYnS_gWfh/view?usp=sharing"
+          href="https://drive.google.com/file/d/1eabIZeBVY60EvG8b2hU7Wx5UftckX315/view?usp=sharing"
           download
           target="_blank"
           rel="noopener noreferrer"

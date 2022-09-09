@@ -167,7 +167,7 @@ function Contact() {
             Coded with{" "}
             <span className={classes.heart}>
               <FavoriteIcon className={classes.heartIcon} />
-            </span>{" "}
+            </span>
             by Venktesh Soma
           </div>
         </Paper>
