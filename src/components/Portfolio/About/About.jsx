@@ -1,25 +1,24 @@
-import { SiHtml5 } from "react-icons/si";
-import { SiCss3 } from "react-icons/si";
-import { SiJavascript } from "react-icons/si";
-import { SiJquery } from "react-icons/si";
-import { SiReact } from "react-icons/si";
-import { SiRedux } from "react-icons/si";
-import { SiNodedotjs } from "react-icons/si";
-import { SiExpress } from "react-icons/si";
-import { SiMongodb } from "react-icons/si";
-import { SiGraphql } from "react-icons/si";
-import { SiApollographql } from "react-icons/si";
-import { SiPython } from "react-icons/si";
-import { SiMaterialui } from "react-icons/si";
-import { SiBootstrap } from "react-icons/si";
-import { SiAntdesign } from "react-icons/si";
-import { SiGit } from "react-icons/si";
-import { SiFirebase } from "react-icons/si";
-import { SiMysql } from "react-icons/si";
-import { SiHeroku } from "react-icons/si";
-import { SiPostman } from "react-icons/si";
-import { useStyles } from "./About.styles";
 import React from "react";
+import {
+  SiAntdesign,
+  SiBootstrap,
+  SiCss3,
+  SiFirebase,
+  SiGit,
+  SiHeroku,
+  SiHtml5,
+  SiJavascript,
+  SiJquery,
+  SiMaterialui,
+  SiMongodb,
+  SiNextdotjs,
+  SiPostman,
+  SiPython,
+  SiReact,
+  SiRedux,
+  SiTypescript
+} from "react-icons/si";
+import { useStyles } from "./About.styles";
 
 function About() {
   const classes = useStyles();
@@ -33,19 +32,18 @@ function About() {
           you can call me <span className={classes.fullName}>Venky </span>
           too😊. An Enthusiastic web developer based out in Ahmedabad(India)
           working as a Software Engineer at Cybage Sft Pvt Ltd, Always been keen
-          and facinated in learning and exploring new stuff out of the box, Also
-          consistently having an 👀 on Software Development, Promoting
+          and fascinated in learning and exploring new stuff out of the box,
+          Also consistently having an 👀 on Software Development, Promoting
           innovative ideas and delivering results. Having an experience of more
-          then 1.5 years under the hood, Excited and
-          comfortable in working with web technologies like
-          React, Node, Express, MongoDB and etc....Currently making my hands dirty
-          by developing awesome checkout pages on Ecommerce domain to get the
-          consumer better User Experience🚀.
+          then 3 years under the hood, Excited and comfortable in working with
+          web technologies like React, Next, Node etc.... Currently making my
+          hands dirty by developing awesome features for Travel & Hospitality
+          domain to get the consumer better User Experience🚀.
           <div>
-            Out of the computer💻, I like to Travel, Reading Books, Watching
-            Movies.
+            Out of the computer💻, much more into Travel, Hook up with friends,
+            Watching Movies.
           </div>
-          <div>I am also trying to get better in Cricket!</div>
+          <div>Also trying to get better in Cricket!</div>
         </div>
       </section>
 
@@ -53,9 +51,23 @@ function About() {
         <div
           className={`${classes.aboutMeAndTechnology} ${classes.technologiesAndTools}`}
         >
-          Technologies & Tools
+          Tools & Technologies
         </div>
         <div className={classes.skillsContainer}>
+          <div className={classes.skillsContent}>
+            <div className={classes.skillsLogo}>
+              <SiReact className={classes.skillImg} />
+            </div>
+            <div className={classes.skillsTitle}>React</div>
+          </div>
+
+          <div className={classes.skillsContent}>
+            <div className={classes.skillsLogo}>
+              <SiTypescript className={classes.skillImg} />
+            </div>
+            <div className={classes.skillsTitle}>TypeScript</div>
+          </div>
+
           <div className={classes.skillsContent}>
             <div className={classes.skillsLogo}>
               <SiHtml5 className={classes.skillImg} />
@@ -86,13 +98,6 @@ function About() {
 
           <div className={classes.skillsContent}>
             <div className={classes.skillsLogo}>
-              <SiReact className={classes.skillImg} />
-            </div>
-            <div className={classes.skillsTitle}>React</div>
-          </div>
-
-          <div className={classes.skillsContent}>
-            <div className={classes.skillsLogo}>
               <SiRedux className={classes.skillImg} />
             </div>
             <div className={classes.skillsTitle}>Redux</div>
@@ -100,16 +105,9 @@ function About() {
 
           <div className={classes.skillsContent}>
             <div className={classes.skillsLogo}>
-              <SiNodedotjs className={classes.skillImg} />
+              <SiNextdotjs className={classes.skillImg} />
             </div>
-            <div className={classes.skillsTitle}>Node</div>
-          </div>
-
-          <div className={classes.skillsContent}>
-            <div className={classes.skillsLogo}>
-              <SiExpress className={classes.skillImg} />
-            </div>
-            <div className={classes.skillsTitle}>Express</div>
+            <div className={classes.skillsTitle}>Next.js</div>
           </div>
 
           <div className={classes.skillsContent}>
@@ -117,20 +115,6 @@ function About() {
               <SiMongodb className={classes.skillImg} />
             </div>
             <div className={classes.skillsTitle}>MongoDB</div>
-          </div>
-
-          <div className={classes.skillsContent}>
-            <div className={classes.skillsLogo}>
-              <SiGraphql className={classes.skillImg} />
-            </div>
-            <div className={classes.skillsTitle}>GraphQL</div>
-          </div>
-
-          <div className={classes.skillsContent}>
-            <div className={classes.skillsLogo}>
-              <SiApollographql className={classes.skillImg} />
-            </div>
-            <div className={classes.skillsTitle}>Apollo</div>
           </div>
 
           <div className={classes.skillsContent}>
@@ -173,13 +157,6 @@ function About() {
               <SiFirebase className={classes.skillImg} />
             </div>
             <div className={classes.skillsTitle}>Firebase</div>
-          </div>
-
-          <div className={classes.skillsContent}>
-            <div className={classes.skillsLogo}>
-              <SiMysql className={classes.skillImg} />
-            </div>
-            <div className={classes.skillsTitle}>Mysql</div>
           </div>
 
           <div className={classes.skillsContent}>

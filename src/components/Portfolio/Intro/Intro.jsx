@@ -9,7 +9,7 @@ function Intro() {
       <div className={styles.DetailsContainer}>
         <div className={styles.Details}>
           <div className={styles.FullDetails}>
-            <div className={styles.IntroLine}>Hii🙋🏻‍♂️, Geeks I'm </div>
+            <div className={styles.IntroLine}>Hii, Geeks I'm </div>
             <h1 className={styles.fullName}>
               Venktesh Soma
               <span className={styles.bounce}></span>
@@ -19,10 +19,12 @@ function Intro() {
               <Typed
                 strings={[
                   "React",
-                  "Node",
-                  "Express",
+                  "TypeScript",
+                  "Next",
+                  "Redux",
+                  "React Query",
                   "JavaScript",
-                  "GraphQL",
+                  "Firebase",
                   "Material UI/AntD",
                 ]}
                 typeSpeed={80}
@@ -32,8 +34,7 @@ function Intro() {
             </p>
 
             <span className={styles.TagLine}>
-              Enthusiast, for building applications with Frontend and Backend
-              operations 🚀
+              Enthusiast and Passionate for building fullStack applications 🚀
             </span>
 
             <div className={styles.HireDetails}>
@@ -50,14 +51,14 @@ function Intro() {
               </div>
 
               <a
-                href="https://drive.google.com/file/d/1eabIZeBVY60EvG8b2hU7Wx5UftckX315/view?usp=sharing"
+                href="https://drive.google.com/file/d/1sRh51otcR9wv0Kfr-N7oufiFPwA2vd5T/view?usp=drive_link"
                 download
                 className={styles.Resume}
                 target="_blank"
                 rel="noopener noreferrer"
-              >Resume
+              >
+                Resume
               </a>
-
             </div>
           </div>
         </div>

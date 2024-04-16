@@ -110,11 +110,12 @@ export const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.down("xs")]: {
       top: "54%",
-    }
+    },
   },
   navbarLinks: {
     display: "flex",
-    justifyContent: "space-between",
+    justifyContent: "flex-end",
+    gap: "75px",
     alignItems: "center",
     width: "40%",
     marginRight: "2%",
@@ -130,7 +131,7 @@ export const useStyles = makeStyles((theme) => ({
     "& li:hover": {
       color: "rgb(255, 255, 255)",
       cursor: "pointer",
-      borderBottom: "2px solid white"
+      borderBottom: "2px solid white",
     },
 
     [theme.breakpoints.down("md")]: {

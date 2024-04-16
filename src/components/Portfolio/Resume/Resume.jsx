@@ -13,17 +13,17 @@ function Resume() {
         className={`${classes.resumeHeaderLineAndResumeCopy} ${classes.resumeCopy}`}
       >
         <a
-          href="https://drive.google.com/file/d/1eabIZeBVY60EvG8b2hU7Wx5UftckX315/view?usp=sharing"
+          href="https://drive.google.com/file/d/1sRh51otcR9wv0Kfr-N7oufiFPwA2vd5T/view?usp=drive_link"
           download
           target="_blank"
           rel="noopener noreferrer"
           className={classes.resumeCopyLine}
         >
           Get a copy
-        </a>    
+        </a>
       </div>
     </section>
   );
 }
 
-export default React.memo(Resume)
+export default React.memo(Resume);
