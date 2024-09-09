@@ -51,7 +51,7 @@ function Intro() {
               </div>
 
               <a
-                href="https://drive.google.com/file/d/1chQmfEZ8nkDAWbULI-4iQnjF6UtZI4J2/view?usp=sharing"
+                href="https://drive.google.com/file/d/1bEhIHB6Y4zb3FNvEaXBx_BRRAkq18wsI/view?usp=drive_link"
                 download
                 className={styles.Resume}
                 target="_blank"
